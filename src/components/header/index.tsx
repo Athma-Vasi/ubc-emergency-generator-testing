@@ -27,9 +27,28 @@ function Header({
 }: HeaderProps) {
   return (
     <header>
-      <h1>Welcome to My Website</h1>
+      <h1>{`Emergency Generator Testing - ${name}`}</h1>
+      <section>
+        <p>{`Location: ${locationName}`}</p>
+        <p>{`Address: ${address}`}</p>
+        <p>{`Floors: ${floors.join(", ")}`}</p>
+        <p>{`Account Number: ${accountNumber}`}</p>
+        <p>{`Monitoring Company: ${monitoringCompany}`}</p>
+        <p>{`Monitoring Company Contact: ${monitoringCompanyContact}`}</p>
+      </section>
+
+      <nav>
+        <ul>
+          {sectionLinks.map((link) => (
+            <li key={link.id}>
+              <a href={`#${link.id}`}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }
 
 export default Header;
+export type { HeaderProps };

@@ -1,12 +1,7 @@
-import Header from "./components/header/Header";
+import Header from "./components/header";
 
 function App() {
-  return (
-    <div className="App">
-      Hi Athma!
-      <Header />
-    </div>
-  );
+  return <div className="App">Hello World</div>;
 }
 
 export default App;
