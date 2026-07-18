@@ -1,4 +1,4 @@
-type BuildingName = "Pharmacy" | "Life Sciences" | "Chemistry";
+type BuildingName = "Pharmacy" | "Tennis Centre";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
