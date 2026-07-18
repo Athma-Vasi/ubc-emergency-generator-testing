@@ -27,7 +27,7 @@ type SafetyInformation = {
 
 type PreTestRequirements = {};
 
-type EmergencyGeneratorInformationImages = Array<{
+type emergencyGeneratorInformation = Array<{
   src: string;
   alt: string;
   caption: string;
@@ -59,7 +59,7 @@ export type {
   ATSRoutePhotos,
   BuildingInfo,
   BuildingName,
-  EmergencyGeneratorInformationImages,
+  emergencyGeneratorInformation,
   FireAlarmPanelRoutePhotos,
   GeneratorRoutePhotos,
   LocationName,

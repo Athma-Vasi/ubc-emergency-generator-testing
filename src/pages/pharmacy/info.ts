@@ -154,7 +154,7 @@ const pharmacy_props: PharmacyProps = {
   routeToElectricalRoom: route_to_electrical_room,
   routeToFireAlarmPanel: route_to_fire_alarm_panel,
   routeToGenerators: route_to_generators,
-  emergencyGeneratorInformationImages: emergency_generator_information_images,
+  emergencyGeneratorInformation: emergency_generator_information_images,
 };
 
 export { pharmacy_props };

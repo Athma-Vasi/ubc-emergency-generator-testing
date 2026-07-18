@@ -7,18 +7,21 @@ import Procedure from "../../components/procedure";
 
 type TennisCentreProps = {
   headerProps: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   routeToFireAlarmPanel: ImagesProps;
   routeToGeneratorAndATS: ImagesProps;
 };
 
 function TennisCentre({
   headerProps,
+  emergencyGeneratorInformation,
   routeToFireAlarmPanel,
   routeToGeneratorAndATS,
 }: TennisCentreProps) {
   return (
     <div className="building">
       <Header {...headerProps} />
+      <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGeneratorAndATS} />
       <Images {...routeToFireAlarmPanel} />
       <Checklist atsKind="ASCO 7000" />
@@ -28,3 +31,4 @@ function TennisCentre({
 }
 
 export default TennisCentre;
+export type { TennisCentreProps };

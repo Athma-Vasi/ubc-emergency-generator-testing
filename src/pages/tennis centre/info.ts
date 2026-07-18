@@ -1,5 +1,8 @@
+import type { TennisCentreProps } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
+import emergencyGeneratorInformation1 from "./assets/tennis-centre-egi-sheet-1.jpeg";
+import emergencyGeneratorInformation2 from "./assets/tennis-centre-egi-sheet-2.jpeg";
 import entrance1 from "./assets/tennis-centre-entrance-1.jpeg";
 import entrance2 from "./assets/tennis-centre-entrance-2.jpeg";
 import firePanelRoomRoute1 from "./assets/tennis-centre-entrance-to-fire-alarm-panel-room-1.jpeg";
@@ -38,6 +41,23 @@ const route_to_generator_and_ats: ImagesProps = {
   ],
 };
 
+const emergency_generator_information: ImagesProps = {
+  description: "Here is the emergency generator information for the Tennis Centre building.",
+  name: "Emergency Generator Information",
+  images: [
+    {
+      alt: "Emergency Generator Information Sheet 1",
+      caption: "Emergency Generator Information Sheet 1",
+      src: emergencyGeneratorInformation1,
+    },
+    {
+      alt: "Emergency Generator Information Sheet 2",
+      caption: "Emergency Generator Information Sheet 2",
+      src: emergencyGeneratorInformation2,
+    },
+  ],
+};
+
 const route_to_fire_panel_room: ImagesProps = {
   description:
     "Here is the route to reach the fire alarm panel located in the Tennis Centre building.",
@@ -71,8 +91,9 @@ const route_to_fire_panel_room: ImagesProps = {
   ],
 };
 
-const tennis_centre_props = {
+const tennis_centre_props: TennisCentreProps = {
   headerProps: header_props,
+  emergencyGeneratorInformation: emergency_generator_information,
   routeToFireAlarmPanel: route_to_fire_panel_room,
   routeToGeneratorAndATS: route_to_generator_and_ats,
 };

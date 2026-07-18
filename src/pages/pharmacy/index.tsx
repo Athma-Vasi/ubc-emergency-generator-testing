@@ -10,11 +10,11 @@ type PharmacyProps = {
   routeToElectricalRoom: ImagesProps;
   routeToGenerators: ImagesProps;
   routeToFireAlarmPanel: ImagesProps;
-  emergencyGeneratorInformationImages: ImagesProps;
+  emergencyGeneratorInformation: ImagesProps;
 };
 
 function Pharmacy({
-  emergencyGeneratorInformationImages,
+  emergencyGeneratorInformation,
   headerProps,
   routeToElectricalRoom,
   routeToFireAlarmPanel,
@@ -26,7 +26,7 @@ function Pharmacy({
       <Images {...routeToGenerators} />
       <Images {...routeToFireAlarmPanel} />
       <Images {...routeToElectricalRoom} />
-      <Images {...emergencyGeneratorInformationImages} />
+      <Images {...emergencyGeneratorInformation} />
       <Checklist atsKind="ASCO 7000" />
       <Procedure />
     </div>
