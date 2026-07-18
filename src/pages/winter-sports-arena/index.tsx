@@ -7,13 +7,19 @@ import Procedure from "../../components/procedure";
 
 type WinterSportsArenaProps = {
   headerProps: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   routeToGeneratorAndATS: ImagesProps;
 };
 
-function WinterSportsArena({ headerProps, routeToGeneratorAndATS }: WinterSportsArenaProps) {
+function WinterSportsArena({
+  headerProps,
+  emergencyGeneratorInformation,
+  routeToGeneratorAndATS,
+}: WinterSportsArenaProps) {
   return (
     <div className="building">
       <Header {...headerProps} />
+      <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGeneratorAndATS} />
       <Checklist atsKind="TSC 80" />
       <Procedure />
