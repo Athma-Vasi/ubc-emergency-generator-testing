@@ -1,10 +1,6 @@
-type SafetyProps = {
-  disclaimer: string;
-};
-
-function Safety({ disclaimer }: SafetyProps) {
+function Safety() {
   return (
-    <section>
+    <section className="safety-section">
       <aside className="safety-disclaimer" aria-label="Safety Disclaimer">
         <h2>⚠️ Safety Notice</h2>
         <p>
@@ -22,4 +18,3 @@ function Safety({ disclaimer }: SafetyProps) {
 }
 
 export default Safety;
-export type { SafetyProps };

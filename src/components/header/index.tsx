@@ -27,7 +27,7 @@ function Header({
 }: HeaderProps) {
   return (
     <header>
-      <h1>{`Emergency Generator Testing - ${name}`}</h1>
+      <h1>{`UBC Emergency Generator Testing - ${name}`}</h1>
       <section>
         <p>{`Location: ${locationName}`}</p>
         <p>{`Address: ${address}`}</p>
@@ -37,7 +37,7 @@ function Header({
         <p>{`Monitoring Company Contact: ${monitoringCompanyContact}`}</p>
       </section>
 
-      <nav>
+      {/* <nav>
         <ul>
           {sectionLinks.map((link) => (
             <li key={link.id}>
@@ -45,7 +45,7 @@ function Header({
             </li>
           ))}
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 }

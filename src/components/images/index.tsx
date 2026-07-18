@@ -1,5 +1,5 @@
-type RouteGuideProps = {
-  routeName: string;
+type ImagesProps = {
+  name: string;
   description: string;
   images: Array<{
     src: string;
@@ -8,16 +8,14 @@ type RouteGuideProps = {
   }>;
 };
 
-function RouteGuide({ description, routeName, images }: RouteGuideProps) {
+function Images({ description, name, images }: ImagesProps) {
   return (
-    <section>
-      <h2>Route Guide</h2>
-
-      <h3>{routeName}</h3>
+    <section className="images-section">
+      <h2>{name}</h2>
 
       <p>{description}</p>
 
-      <div className="route-guide-images">
+      <div className="images-container">
         {images.map((image, index) => (
           <figure key={`${image.src}-${image.alt}-${index}`}>
             <img src={image.src} alt={image.alt} />
@@ -29,5 +27,5 @@ function RouteGuide({ description, routeName, images }: RouteGuideProps) {
   );
 }
 
-export default RouteGuide;
-export type { RouteGuideProps };
+export default Images;
+export type { ImagesProps };

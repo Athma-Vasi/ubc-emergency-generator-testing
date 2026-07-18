@@ -1,18 +1,34 @@
-import Header from "../../components/header";
+import Checklist from "../../components/checklist";
 import type { HeaderProps } from "../../components/header";
-import type { SafetyProps } from "../../components/safety";
-import Safety from "../../components/safety";
+import Header from "../../components/header";
+import type { ImagesProps } from "../../components/images";
+import Images from "../../components/images";
+import Procedure from "../../components/procedure";
 
 type PharmacyProps = {
   headerProps: HeaderProps;
-  safetyProps: SafetyProps;
+  routeToElectricalRoom: ImagesProps;
+  routeToGenerators: ImagesProps;
+  routeToFireAlarmPanel: ImagesProps;
+  emergencyGeneratorInformationImages: ImagesProps;
 };
 
-function Pharmacy({ headerProps, safetyProps }: PharmacyProps) {
+function Pharmacy({
+  emergencyGeneratorInformationImages,
+  headerProps,
+  routeToElectricalRoom,
+  routeToFireAlarmPanel,
+  routeToGenerators,
+}: PharmacyProps) {
   return (
-    <div>
+    <div className="building">
       <Header {...headerProps} />
-      <Safety {...safetyProps} />
+      <Images {...routeToGenerators} />
+      <Images {...routeToFireAlarmPanel} />
+      <Images {...routeToElectricalRoom} />
+      <Images {...emergencyGeneratorInformationImages} />
+      <Checklist />
+      <Procedure />
     </div>
   );
 }
