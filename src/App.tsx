@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router";
+import HealthSciencesParkade from "./pages/health-sciences-parkade";
+import { health_sciences_parkade_props } from "./pages/health-sciences-parkade/info";
 import Home from "./pages/home";
 import Pharmacy from "./pages/pharmacy";
 import { pharmacy_props } from "./pages/pharmacy/info";
@@ -17,6 +19,10 @@ function App() {
         <Route
           path="/winter-sports-arena"
           element={<WinterSportsArena {...winter_sports_arena_props} />}
+        />
+        <Route
+          path="/health-sciences-parkade"
+          element={<HealthSciencesParkade {...health_sciences_parkade_props} />}
         />
       </Routes>
     </div>

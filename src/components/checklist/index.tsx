@@ -1,5 +1,5 @@
 type ChecklistProps = {
-  atsKind: "ASCO 7000" | "TSC 80";
+  atsKind: "ASCO 7000" | "TSC 80" | "ASCO Health Sciences Parkade";
 };
 
 function Checklist({ atsKind }: ChecklistProps) {
@@ -40,14 +40,20 @@ function Checklist({ atsKind }: ChecklistProps) {
             "Ensure that 'Transfer Switch Connected to Emergency' light is off.",
             "Ensure that 'Emergency Source Accepted' light is off.",
           ]
-        : [
-            "Ensure that load is on utility power and not generator power.",
-            "Ensure that utility-side indicators are green :'Utility Supply' light is on.",
-            "Ensure that generator-side supply indicator is off: 'Generator Supply' light is off.",
-            "Ensure that the load indicator is on: 'Load' light is on.",
-            "Ensure that 'Utility Power Fail Test Mode' light is off.",
-            "Ensure that 'Generator Exercise Timer' light is off.",
-          ],
+        : atsKind === "TSC 80"
+          ? [
+              "Ensure that load is on utility power and not generator power.",
+              "Ensure that utility-side indicators are green :'Utility Supply' light is on.",
+              "Ensure that generator-side supply indicator is off: 'Generator Supply' light is off.",
+              "Ensure that the load indicator is on: 'Load' light is on.",
+              "Ensure that 'Utility Power Fail Test Mode' light is off.",
+              "Ensure that 'Generator Exercise Timer' light is off.",
+            ]
+          : [
+              "Ensure that load is on utility power and not generator power.",
+              "Ensure that controller display reads 'Normal OK' and 'Load On Normal'.",
+              "Ensure that two green status LEDs are lit near the lower left of the controller, indicating normal operation.",
+            ],
   };
 
   const during_test = {
@@ -69,13 +75,18 @@ function Checklist({ atsKind }: ChecklistProps) {
             "Ensure that 'Emergency Source Accepted' light is on.",
             "Ensure that panel indicates a countdown timer starting with : 'TD Emerg>Normal: 0:59min59s'.",
           ]
-        : [
-            "Ensure that utility supply is available and stable during the test.",
-            "Ensure that the generator is providing power to the load during the test.",
-            "Ensure that the load is stable and not experiencing any interruptions during the test.",
-            "Ensure that the ATS is functioning correctly and switching between utility and generator power as expected.",
-            "Ensure that the transfer-position indicator near the generator side is red.",
-          ],
+        : atsKind === "TSC 80"
+          ? [
+              "Ensure that utility supply is available and stable during the test.",
+              "Ensure that the generator is providing power to the load during the test.",
+              "Ensure that the load is stable and not experiencing any interruptions during the test.",
+              "Ensure that the ATS is functioning correctly and switching between utility and generator power as expected.",
+              "Ensure that the transfer-position indicator near the generator side is red.",
+            ]
+          : [
+              "Ensure that the display reads: 'Normal OK,' 'Emergency > Normal,' and a timer around '00h 59m 56s', with a prompt to 'Press Bypass Timer.'",
+              "Ensure that the unit is in a transfer test and the load is currently being held on or moved to the emergency source path: red indicators on the emergency/generator side are on",
+            ],
     planon_items: [
       "Note generator fuel level.",
       "Note L1, L2, L3 voltage readings.",

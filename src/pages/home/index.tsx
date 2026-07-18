@@ -5,6 +5,7 @@ function Home() {
     { name: "Pharmacy", path: "/pharmacy" },
     { name: "Tennis Centre", path: "/tennis-centre" },
     { name: "Doug Mitchell Thunderbird Sports Centre", path: "/winter-sports-arena" },
+    { name: "Health Sciences Parkade", path: "/health-sciences-parkade" },
   ];
 
   return (
