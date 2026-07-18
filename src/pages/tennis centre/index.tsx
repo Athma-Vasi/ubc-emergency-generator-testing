@@ -21,7 +21,7 @@ function TennisCentre({
       <Header {...headerProps} />
       <Images {...routeToGeneratorAndATS} />
       <Images {...routeToFireAlarmPanel} />
-      <Checklist />
+      <Checklist atsKind="ASCO 7000" />
       <Procedure />
     </div>
   );

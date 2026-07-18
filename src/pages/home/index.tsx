@@ -1,7 +1,11 @@
 import Safety from "../../components/safety";
 
 function Home() {
-  const building_links = [{ name: "Pharmacy", path: "/pharmacy" }];
+  const building_links = [
+    { name: "Pharmacy", path: "/pharmacy" },
+    { name: "Tennis Centre", path: "/tennis-centre" },
+    { name: "Doug Mitchell Thunderbird Sports Centre", path: "/winter-sports-arena" },
+  ];
 
   return (
     <section>

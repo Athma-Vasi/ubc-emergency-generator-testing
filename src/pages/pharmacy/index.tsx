@@ -27,7 +27,7 @@ function Pharmacy({
       <Images {...routeToFireAlarmPanel} />
       <Images {...routeToElectricalRoom} />
       <Images {...emergencyGeneratorInformationImages} />
-      <Checklist />
+      <Checklist atsKind="ASCO 7000" />
       <Procedure />
     </div>
   );
