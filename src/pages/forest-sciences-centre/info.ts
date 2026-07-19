@@ -1,3 +1,4 @@
+import type { ForestSciencesCentreProps } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
 import egiSheet1 from "./assets/forestry-sciences-egi-sheet-1.jpeg";
@@ -31,3 +32,10 @@ const emergency_generator_information: ImagesProps = {
     },
   ],
 };
+
+const forest_sciences_centre_props: ForestSciencesCentreProps = {
+  headerProps: header_props,
+  emergencyGeneratorInformation: emergency_generator_information,
+};
+
+export { forest_sciences_centre_props };

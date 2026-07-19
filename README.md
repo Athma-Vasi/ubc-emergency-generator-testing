@@ -1,34 +1,30 @@
-# React + TypeScript + Vite
+# UBC Emergency Generator Testing Notes (Unofficial)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[Link to Website](https://athma-vasi.github.io/ubc-emergency-generator-testing/)
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository is a personal learning project that documents building-level notes for emergency generator testing at UBC in a website format.
 
-## React Compiler
+The goal is to improve understanding, consistency, and knowledge-sharing through practical field notes, photos, and step-by-step references.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Important Disclaimer
 
-Note: This will impact Vite dev & build performances.
+This project is **unofficial**.
 
-## Expanding the Oxlint configuration
+This project is **not** an UBC Safe Work Procedure, operating standard, policy document, or formal instruction.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Always follow:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- Approved UBC procedures and documentation
+- Supervisor direction
+- Applicable codes, regulations, and site-specific requirements
+- Required permits, lockout/energy isolation requirements, and safety controls
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+If any content in this repository conflicts with official guidance, _**official guidance takes priority**_.
+
+## Community Spirit
+
+This work is shared in a spirit of charity and [seva](https://en.wikipedia.org/wiki/Sev%C4%81) by the author for anyone who may find it useful as a learning reference.
+
+All are welcome to peruse and learn from the material.

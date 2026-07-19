@@ -31,7 +31,6 @@ function Header({
   monitoringCompany,
   monitoringCompanyContact,
   name,
-  sectionLinks,
 }: HeaderProps) {
   return (
     <header>
@@ -44,16 +43,6 @@ function Header({
         <p>{`Monitoring Company: ${monitoringCompany}`}</p>
         <p>{`Monitoring Company Contact: ${monitoringCompanyContact}`}</p>
       </section>
-
-      {/* <nav>
-        <ul>
-          {sectionLinks.map((link) => (
-            <li key={link.id}>
-              <a href={`#${link.id}`}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
-      </nav> */}
     </header>
   );
 }
