@@ -38,7 +38,7 @@ function Procedure() {
           Record the amperage readings on the gauges at the generator 30 minutes into the test.
         </li>
         <li>After one hour, transfer the load back to the building and turn the generator off.</li>
-        <li>Call TELUS back and let them know to release the test on the system.</li>
+        <li>Call Accurate Monitoring back and let them know to release the test on the system.</li>
         <li>
           Record all findings in logbook onsite and let your supervisor know of any issues found.
         </li>

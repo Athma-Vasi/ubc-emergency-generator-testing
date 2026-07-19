@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router";
+import FairviewCrescent from "./pages/fairview-crescent";
+import { fairview_crescent_props } from "./pages/fairview-crescent/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
 import { health_sciences_parkade_props } from "./pages/health-sciences-parkade/info";
 import Home from "./pages/home";
@@ -23,6 +25,10 @@ function App() {
         <Route
           path="/health-sciences-parkade"
           element={<HealthSciencesParkade {...health_sciences_parkade_props} />}
+        />
+        <Route
+          path="/fairview-crescent"
+          element={<FairviewCrescent {...fairview_crescent_props} />}
         />
       </Routes>
     </div>

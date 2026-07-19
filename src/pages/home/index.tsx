@@ -6,6 +6,7 @@ function Home() {
     { name: "Tennis Centre", path: "/tennis-centre" },
     { name: "Doug Mitchell Thunderbird Sports Centre", path: "/winter-sports-arena" },
     { name: "Health Sciences Parkade", path: "/health-sciences-parkade" },
+    { name: "Fairview Crescent", path: "/fairview-crescent" },
   ];
 
   return (
