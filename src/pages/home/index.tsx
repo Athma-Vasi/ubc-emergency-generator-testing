@@ -11,6 +11,7 @@ function Home() {
     { name: "Gateway Health", path: "/gateway-health" },
     { name: "Forest Sciences Centre", path: "/forest-sciences-centre" },
     { name: "ICICS Ground", path: "/icics-ground" },
+    { name: "ICICS Rooftop", path: "/icics-rooftop" },
   ];
 
   return (

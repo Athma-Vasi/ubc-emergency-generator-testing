@@ -5,7 +5,8 @@ type ATSInspectionProps = {
     | "TSC 80"
     | "TSC 800"
     | "Onan BT 600"
-    | "TornaTech TFR 600/125/18";
+    | "TornaTech TFR 600/125/18"
+    | "Cummins OPTC A";
 };
 
 function ATSInspection({ atsKind }: ATSInspectionProps) {
@@ -45,7 +46,14 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                   "Ensure that 'ALTERNATE POWER' indicator is on.",
                   "Ensure that 'TRANSFER SWITCH IN ALTERNATE POSITION' indicator is off.",
                 ]
-              : [];
+              : atsKind === "Cummins OPTC A"
+                ? [
+                    "Ensure that Source 1 (Utility) Connected light is on.",
+                    "Ensure that Source 1 (Utility) Available light is on.",
+                    "Ensure that Source 2 (Generator) Connected light is off.",
+                    "Ensure that Source 2 (Generator) Available light is off.",
+                  ]
+                : [];
 
   const during_test_inspection =
     atsKind === "ASCO 7000"
@@ -83,7 +91,14 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                   "Ensure that 'ALTERNATE POWER' indicator is on.",
                   "Ensure that 'TRANSFER SWITCH IN ALTERNATE POSITION' indicator is on.",
                 ]
-              : [];
+              : atsKind === "Cummins OPTC A"
+                ? [
+                    "Ensure that Source 1 (Utility) Connected light is off.",
+                    "Ensure that Source 1 (Utility) Available light is on.",
+                    "Ensure that Source 2 (Generator) Connected light is on.",
+                    "Ensure that Source 2 (Generator) Available light is on.",
+                  ]
+                : [];
 
   return (
     <section>

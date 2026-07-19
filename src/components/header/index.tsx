@@ -7,7 +7,8 @@ type BuildingName =
   | "Acadia Park High Rise"
   | "Gateway Health"
   | "Forest Sciences Centre"
-  | "ICICS (Ground)";
+  | "ICICS (Ground)"
+  | "ICICS (Rooftop)";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
