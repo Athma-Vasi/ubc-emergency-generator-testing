@@ -1,3 +1,4 @@
+import ATSInspection from "../../components/atsInspection";
 import Checklist from "../../components/checklist";
 import type { HeaderProps } from "../../components/header";
 import Header from "../../components/header";
@@ -28,7 +29,8 @@ function FairviewCrescent({
       <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGenerator} />
       <Images {...routeToATSAndFireAlarmPanel} />
-      <Checklist atsKind="TSC 80" />
+      <Checklist />
+      <ATSInspection atsKind="TSC 80" />
       <Notes {...notesProps} />
       <Procedure />
     </div>

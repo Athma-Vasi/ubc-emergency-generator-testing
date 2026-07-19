@@ -1,8 +1,4 @@
-type ChecklistProps = {
-  atsKind: "ASCO 7000" | "TSC 80" | "ASCO Health Sciences Parkade";
-};
-
-function Checklist({ atsKind }: ChecklistProps) {
+function Checklist() {
   const pre_and_post_test = {
     visual_inspection: [
       "Check for visible leaks (fuel, oil, coolant, exhaust, etc.).",
@@ -34,30 +30,6 @@ function Checklist({ atsKind }: ChecklistProps) {
       "Ensure that all guards and covers are in place and secure.",
       "Inspect the exhaust system for leaks or damage.",
     ],
-
-    ats_inspection:
-      atsKind === "ASCO 7000"
-        ? [
-            "Check for any error codes or warning lights on the ATS panel.",
-            "Ensure that 'Transfer Switch Connected to Normal' light is on.",
-            "Ensure that 'Normal Source Accepted' light is on.",
-            "Ensure that 'Transfer Switch Connected to Emergency' light is off.",
-            "Ensure that 'Emergency Source Accepted' light is off.",
-          ]
-        : atsKind === "TSC 80"
-          ? [
-              "Ensure that load is on utility power and not generator power.",
-              "Ensure that utility-side indicators are green :'Utility Supply' light is on.",
-              "Ensure that generator-side supply indicator is off: 'Generator Supply' light is off.",
-              "Ensure that the load indicator is on: 'Load' light is on.",
-              "Ensure that 'Utility Power Fail Test Mode' light is off.",
-              "Ensure that 'Generator Exercise Timer' light is off.",
-            ]
-          : [
-              "Ensure that load is on utility power and not generator power.",
-              "Ensure that controller display reads 'Normal OK' and 'Load On Normal'.",
-              "Ensure that two green status LEDs are lit near the lower left of the controller, indicating normal operation.",
-            ],
   };
 
   const during_test = {
@@ -68,30 +40,6 @@ function Checklist({ atsKind }: ChecklistProps) {
       "Observe the exhaust for excessive smoke or unusual color.",
       "Check for any leaks or drips during operation.",
     ],
-
-    ats_inspection:
-      atsKind === "ASCO 7000"
-        ? [
-            "Monitor ATS operation and ensure it switches correctly between utility and generator power.",
-            "Check for any error codes or warning lights on the ATS panel.",
-            "Ensure that 'Transfer Switch Connected to Normal' light is off.",
-            "Ensure that 'Normal Source Accepted' light is on.",
-            "Ensure that 'Transfer Switch Connected to Emergency' light is on.",
-            "Ensure that 'Emergency Source Accepted' light is on.",
-            "Ensure that panel indicates a countdown timer starting with : 'TD Emerg>Normal: 0:59min59s'.",
-          ]
-        : atsKind === "TSC 80"
-          ? [
-              "Ensure that utility supply is available and stable during the test.",
-              "Ensure that the generator is providing power to the load during the test.",
-              "Ensure that the load is stable and not experiencing any interruptions during the test.",
-              "Ensure that the ATS is functioning correctly and switching between utility and generator power as expected.",
-              "Ensure that the transfer-position indicator near the generator side is red.",
-            ]
-          : [
-              "Ensure that the display reads: 'Normal OK,' 'Emergency > Normal,' and a timer around '00h 59m 56s', with a prompt to 'Press Bypass Timer.'",
-              "Ensure that the unit is in a transfer test and the load is currently being held on or moved to the emergency source path: red indicators on the emergency/generator side are on",
-            ],
 
     planon_items: [
       "Note generator fuel level.",

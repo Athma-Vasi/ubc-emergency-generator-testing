@@ -3,6 +3,8 @@ import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import FairviewCrescent from "./pages/fairview-crescent";
 import { fairview_crescent_props } from "./pages/fairview-crescent/info";
+import ForestSciencesCentre from "./pages/forest-sciences-centre";
+import { forest_sciences_centre_props } from "./pages/forest-sciences-centre/info";
 import GatewayHealth from "./pages/gateway-health";
 import { gateway_health_props } from "./pages/gateway-health/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
@@ -39,6 +41,10 @@ function App() {
           element={<AcadiaParkHighRise {...acadia_park_high_rise_props} />}
         />
         <Route path="/gateway-health" element={<GatewayHealth {...gateway_health_props} />} />
+        <Route
+          path="/forest-sciences-centre"
+          element={<ForestSciencesCentre {...forest_sciences_centre_props} />}
+        />
       </Routes>
     </div>
   );

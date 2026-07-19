@@ -1,3 +1,4 @@
+import ATSInspection from "../../components/atsInspection";
 import Checklist from "../../components/checklist";
 import type { HeaderProps } from "../../components/header";
 import Header from "../../components/header";
@@ -24,7 +25,8 @@ function AcadiaParkHighRise({
       <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGenerator} />
       <Images {...routeToATSAndFireAlarmPanel} />
-      <Checklist atsKind="ASCO Health Sciences Parkade" />
+      <Checklist />
+      <ATSInspection atsKind="ASCO 300" />
       <Procedure />
     </div>
   );

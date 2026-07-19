@@ -1,3 +1,4 @@
+import ATSInspection from "../../components/atsInspection";
 import Checklist from "../../components/checklist";
 import type { HeaderProps } from "../../components/header";
 import Header from "../../components/header";
@@ -27,7 +28,8 @@ function Pharmacy({
       <Images {...routeToFireAlarmPanel} />
       <Images {...routeToElectricalRoom} />
       <Images {...emergencyGeneratorInformation} />
-      <Checklist atsKind="ASCO 7000" />
+      <Checklist />
+      <ATSInspection atsKind="ASCO 7000" />
       <Procedure />
     </div>
   );

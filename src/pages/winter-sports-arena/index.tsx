@@ -1,3 +1,4 @@
+import ATSInspection from "../../components/atsInspection";
 import Checklist from "../../components/checklist";
 import type { HeaderProps } from "../../components/header";
 import Header from "../../components/header";
@@ -21,7 +22,8 @@ function WinterSportsArena({
       <Header {...headerProps} />
       <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGeneratorAndATS} />
-      <Checklist atsKind="TSC 80" />
+      <Checklist />
+      <ATSInspection atsKind="TSC 80" />
       <Procedure />
     </div>
   );

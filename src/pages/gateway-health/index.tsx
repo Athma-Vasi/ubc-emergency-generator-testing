@@ -1,3 +1,4 @@
+import ATSInspection from "../../components/atsInspection";
 import Checklist from "../../components/checklist";
 import type { HeaderProps } from "../../components/header";
 import Header from "../../components/header";
@@ -25,7 +26,8 @@ function GatewayHealth({
       <Header {...headerProps} />
       <Images {...routeToGenerator} />
       <Images {...routeToATSAndFireAlarmPanel} />
-      <Checklist atsKind="ASCO 7000" />
+      <Checklist />
+      <ATSInspection atsKind="ASCO 7000" />
       <Notes {...notesProps} />
       <Procedure />
     </div>
