@@ -12,6 +12,7 @@ function Checklist({ atsKind }: ChecklistProps) {
       "Check exhaust system for blockages.",
       "Inspect the air filter for cleanliness.",
     ],
+
     fluid_inspection: [
       "Check engine oil level (dipstick) - should be at full mark.",
       "Check coolant level in the radiator and overflow tank - should be at proper level.",
@@ -19,18 +20,21 @@ function Checklist({ atsKind }: ChecklistProps) {
       "Check oil/coolant condition - look for discoloration or contamination.",
       "Check for any fluid leaks under the generator.",
     ],
+
     electrical_inspection: [
       "Check battery voltage and connections - should be clean and tight.",
       "Inspect control panel for any error codes or warning lights.",
       "Check for loose or frayed wiring and ensure all connections are secure.",
       "Ground connections secure and clean.",
     ],
+
     mechanical_inspection: [
       "Engine cooling fan and belts are in good condition.",
       "Inspect the generator housing for any damage or wear.",
       "Ensure that all guards and covers are in place and secure.",
       "Inspect the exhaust system for leaks or damage.",
     ],
+
     ats_inspection:
       atsKind === "ASCO 7000"
         ? [
@@ -64,6 +68,7 @@ function Checklist({ atsKind }: ChecklistProps) {
       "Observe the exhaust for excessive smoke or unusual color.",
       "Check for any leaks or drips during operation.",
     ],
+
     ats_inspection:
       atsKind === "ASCO 7000"
         ? [
@@ -87,6 +92,7 @@ function Checklist({ atsKind }: ChecklistProps) {
               "Ensure that the display reads: 'Normal OK,' 'Emergency > Normal,' and a timer around '00h 59m 56s', with a prompt to 'Press Bypass Timer.'",
               "Ensure that the unit is in a transfer test and the load is currently being held on or moved to the emergency source path: red indicators on the emergency/generator side are on",
             ],
+
     planon_items: [
       "Note generator fuel level.",
       "Note L1, L2, L3 voltage readings.",
@@ -97,24 +103,32 @@ function Checklist({ atsKind }: ChecklistProps) {
       "Note generator battery charger voltage reading.",
       "Note generator oil pressure reading.",
       "Note generator coolant temperature reading.",
+      "Note generator run time reading.",
+      "Note generator battery voltage reading.",
     ],
   };
 
   return (
     <section>
       <h2>Checklist</h2>
-      <ChecklistSection title="Pre-And-Post Test" items={pre_and_post_test} />
-      <ChecklistSection title="During Test" items={during_test} />
+      <ChecklistSection title="Pre-And-Post Test" checklist={pre_and_post_test} />
+      <ChecklistSection title="During Test" checklist={during_test} />
     </section>
   );
 }
 
-function ChecklistSection({ title, items }: { title: string; items: Record<string, string[]> }) {
+function ChecklistSection({
+  title,
+  checklist,
+}: {
+  title: string;
+  checklist: Record<string, string[]>;
+}) {
   return (
     <section>
       <h3>{title}</h3>
       <ul>
-        {Object.entries(items).map(([category, categoryItems], category_index) => (
+        {Object.entries(checklist).map(([category, categoryItems], category_index) => (
           <li key={`${category_index}-${category}`}>
             <strong>{category.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</strong>
             <ul>
