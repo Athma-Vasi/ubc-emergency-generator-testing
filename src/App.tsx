@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router";
+import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
+import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import FairviewCrescent from "./pages/fairview-crescent";
 import { fairview_crescent_props } from "./pages/fairview-crescent/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
@@ -29,6 +31,10 @@ function App() {
         <Route
           path="/fairview-crescent"
           element={<FairviewCrescent {...fairview_crescent_props} />}
+        />
+        <Route
+          path="/acadia-park-high-rise"
+          element={<AcadiaParkHighRise {...acadia_park_high_rise_props} />}
         />
       </Routes>
     </div>

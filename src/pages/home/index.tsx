@@ -7,6 +7,7 @@ function Home() {
     { name: "Doug Mitchell Thunderbird Sports Centre", path: "/winter-sports-arena" },
     { name: "Health Sciences Parkade", path: "/health-sciences-parkade" },
     { name: "Fairview Crescent", path: "/fairview-crescent" },
+    { name: "Acadia Park High Rise", path: "/acadia-park-high-rise" },
   ];
 
   return (

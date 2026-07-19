@@ -3,7 +3,8 @@ type BuildingName =
   | "Tennis Centre"
   | "Doug Mitchell Thunderbird Sports Centre"
   | "Health Sciences Parkade"
-  | "Fairview Crescent";
+  | "Fairview Crescent"
+  | "Acadia Park High Rise";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
