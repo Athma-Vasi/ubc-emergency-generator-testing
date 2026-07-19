@@ -6,7 +6,8 @@ type BuildingName =
   | "Fairview Crescent"
   | "Acadia Park High Rise"
   | "Gateway Health"
-  | "Forest Sciences Centre";
+  | "Forest Sciences Centre"
+  | "ICICS (Ground)";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

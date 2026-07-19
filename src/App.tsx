@@ -10,6 +10,8 @@ import { gateway_health_props } from "./pages/gateway-health/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
 import { health_sciences_parkade_props } from "./pages/health-sciences-parkade/info";
 import Home from "./pages/home";
+import ICICSGround from "./pages/icics-ground";
+import { icics_ground_props } from "./pages/icics-ground/info";
 import Pharmacy from "./pages/pharmacy";
 import { pharmacy_props } from "./pages/pharmacy/info";
 import TennisCentre from "./pages/tennis centre";
@@ -45,6 +47,7 @@ function App() {
           path="/forest-sciences-centre"
           element={<ForestSciencesCentre {...forest_sciences_centre_props} />}
         />
+        <Route path="/icics-ground" element={<ICICSGround {...icics_ground_props} />} />
       </Routes>
     </div>
   );

@@ -10,6 +10,7 @@ function Home() {
     { name: "Acadia Park High Rise", path: "/acadia-park-high-rise" },
     { name: "Gateway Health", path: "/gateway-health" },
     { name: "Forest Sciences Centre", path: "/forest-sciences-centre" },
+    { name: "ICICS Ground", path: "/icics-ground" },
   ];
 
   return (
