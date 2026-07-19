@@ -9,6 +9,7 @@ import Procedure from "../../components/procedure";
 
 type FairviewCrescentProps = {
   headerProps: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   routeToGenerator: ImagesProps;
   routeToATSAndFireAlarmPanel: ImagesProps;
   notesProps: NotesProps;
@@ -16,6 +17,7 @@ type FairviewCrescentProps = {
 
 function FairviewCrescent({
   headerProps,
+  emergencyGeneratorInformation,
   routeToATSAndFireAlarmPanel,
   routeToGenerator,
   notesProps,
@@ -23,6 +25,7 @@ function FairviewCrescent({
   return (
     <div className="building">
       <Header {...headerProps} />
+      <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGenerator} />
       <Images {...routeToATSAndFireAlarmPanel} />
       <Checklist atsKind="TSC 80" />

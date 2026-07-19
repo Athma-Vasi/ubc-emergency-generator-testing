@@ -6,6 +6,8 @@ import atsFireAlarmPanelLocation1 from "./assets/fairview-crescent-ats-fire-pane
 import atsFireAlarmPanelLocation2 from "./assets/fairview-crescent-ats-fire-panel-route-2.jpeg";
 import atsFireAlarmPanelLocation3 from "./assets/fairview-crescent-ats-fire-panel-route-3.jpeg";
 import atsFireAlarmPanelLocation4 from "./assets/fairview-crescent-ats-fire-panel-route-4.jpeg";
+import emergencyGeneratorInformation1 from "./assets/fairview-crescent-egi-sheet-1.jpeg";
+import emergencyGeneratorInformation2 from "./assets/fairview-crescent-egi-sheet-2.jpeg";
 import generatorLocation1 from "./assets/fairview-crescent-generator-location-1.jpeg";
 import generatorLocation2 from "./assets/fairview-crescent-generator-location-2.jpeg";
 
@@ -18,6 +20,23 @@ const header_props: HeaderProps = {
   monitoringCompanyContact: "604-777-3425",
   name: "Fairview Crescent",
   sectionLinks: [],
+};
+
+const emergency_generator_information: ImagesProps = {
+  description: "Here is the emergency generator information for the Fairview Crescent building.",
+  name: "Emergency Generator Information",
+  images: [
+    {
+      alt: "Emergency Generator Information Sheet 1",
+      caption: "Emergency Generator Information Sheet 1",
+      src: emergencyGeneratorInformation1,
+    },
+    {
+      alt: "Emergency Generator Information Sheet 2",
+      caption: "Emergency Generator Information Sheet 2",
+      src: emergencyGeneratorInformation2,
+    },
+  ],
 };
 
 const route_to_generator: ImagesProps = {
@@ -73,6 +92,7 @@ const notes_props: NotesProps = {
 
 const fairview_crescent_props: FairviewCrescentProps = {
   headerProps: header_props,
+  emergencyGeneratorInformation: emergency_generator_information,
   routeToGenerator: route_to_generator,
   routeToATSAndFireAlarmPanel: route_to_ats_and_fire_alarm_panel,
   notesProps: notes_props,

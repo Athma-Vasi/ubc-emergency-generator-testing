@@ -6,6 +6,8 @@ import atsAndFireAlarmPanelLocation2 from "./assets/acadia-park-high-rise-ats-fi
 import atsAndFireAlarmPanelLocation3 from "./assets/acadia-park-high-rise-ats-fire-alarm-panel-route-3.jpeg";
 import atsAndFireAlarmPanelLocation4 from "./assets/acadia-park-high-rise-ats-fire-alarm-panel-route-4.jpeg";
 import atsAndFireAlarmPanelLocation5 from "./assets/acadia-park-high-rise-ats-fire-alarm-panel-route-5.jpeg";
+import emergencyGeneratorInformation1 from "./assets/acadia-park-high-rise-egi-sheet-1.jpeg";
+import emergencyGeneratorInformation2 from "./assets/acadia-park-high-rise-egi-sheet-2.jpeg";
 import generatorLocation1 from "./assets/acadia-park-high-rise-generator-location-1.jpeg";
 import generatorLocation2 from "./assets/acadia-park-high-rise-generator-location-2.jpeg";
 
@@ -18,6 +20,24 @@ const header_props: HeaderProps = {
   monitoringCompanyContact: "604-777-3425",
   name: "Acadia Park High Rise",
   sectionLinks: [],
+};
+
+const emergency_generator_information: ImagesProps = {
+  description:
+    "Here is the emergency generator information for the Acadia Park High Rise building.",
+  name: "Emergency Generator Information",
+  images: [
+    {
+      alt: "Emergency Generator Information Sheet 1",
+      caption: "Emergency Generator Information Sheet 1",
+      src: emergencyGeneratorInformation1,
+    },
+    {
+      alt: "Emergency Generator Information Sheet 2",
+      caption: "Emergency Generator Information Sheet 2",
+      src: emergencyGeneratorInformation2,
+    },
+  ],
 };
 
 const route_to_generator: ImagesProps = {
@@ -74,6 +94,7 @@ const route_to_ats_and_fire_alarm_panel: ImagesProps = {
 
 const acadia_park_high_rise_props: AcadiaParkHighRiseProps = {
   headerProps: header_props,
+  emergencyGeneratorInformation: emergency_generator_information,
   routeToGenerator: route_to_generator,
   routeToATSAndFireAlarmPanel: route_to_ats_and_fire_alarm_panel,
 };

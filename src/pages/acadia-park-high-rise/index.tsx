@@ -7,18 +7,21 @@ import Procedure from "../../components/procedure";
 
 type AcadiaParkHighRiseProps = {
   headerProps: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   routeToGenerator: ImagesProps;
   routeToATSAndFireAlarmPanel: ImagesProps;
 };
 
 function AcadiaParkHighRise({
   headerProps,
+  emergencyGeneratorInformation,
   routeToATSAndFireAlarmPanel,
   routeToGenerator,
 }: AcadiaParkHighRiseProps) {
   return (
     <div className="building">
       <Header {...headerProps} />
+      <Images {...emergencyGeneratorInformation} />
       <Images {...routeToGenerator} />
       <Images {...routeToATSAndFireAlarmPanel} />
       <Checklist atsKind="ASCO Health Sciences Parkade" />
