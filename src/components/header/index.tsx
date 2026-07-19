@@ -8,7 +8,8 @@ type BuildingName =
   | "Gateway Health"
   | "Forest Sciences Centre"
   | "ICICS (Ground)"
-  | "ICICS (Rooftop)";
+  | "ICICS (Rooftop)"
+  | "Brimacombe";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

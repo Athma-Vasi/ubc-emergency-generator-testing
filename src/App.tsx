@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
+import Brimacombe from "./pages/brimacombe";
+import { brimacombe_props } from "./pages/brimacombe/info";
 import FairviewCrescent from "./pages/fairview-crescent";
 import { fairview_crescent_props } from "./pages/fairview-crescent/info";
 import ForestSciencesCentre from "./pages/forest-sciences-centre";
@@ -51,6 +53,7 @@ function App() {
         />
         <Route path="/icics-ground" element={<ICICSGround {...icics_ground_props} />} />
         <Route path="/icics-rooftop" element={<ICICSRooftop {...icics_rooftop_props} />} />
+        <Route path="/brimacombe" element={<Brimacombe {...brimacombe_props} />} />
       </Routes>
     </div>
   );
