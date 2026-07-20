@@ -9,7 +9,8 @@ type BuildingName =
   | "Forest Sciences Centre"
   | "ICICS (Ground)"
   | "ICICS (Rooftop)"
-  | "Brimacombe";
+  | "Brimacombe"
+  | "Bio Sciences North";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
