@@ -3,6 +3,8 @@ import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import BioSciencesNorth from "./pages/bio-sciences-north";
 import { bio_sciences_north_props } from "./pages/bio-sciences-north/info";
+import BioSciencesSouth from "./pages/bio-sciences-south";
+import { bio_sciences_south_props } from "./pages/bio-sciences-south/info";
 import Brimacombe from "./pages/brimacombe";
 import { brimacombe_props } from "./pages/brimacombe/info";
 import FairviewCrescent from "./pages/fairview-crescent";
@@ -59,6 +61,10 @@ function App() {
         <Route
           path="/bio-sciences-north"
           element={<BioSciencesNorth {...bio_sciences_north_props} />}
+        />
+        <Route
+          path="/bio-sciences-south"
+          element={<BioSciencesSouth {...bio_sciences_south_props} />}
         />
       </Routes>
     </div>

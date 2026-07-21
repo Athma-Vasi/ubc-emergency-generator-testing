@@ -14,6 +14,7 @@ function Home() {
     { name: "ICICS Rooftop", path: "/icics-rooftop" },
     { name: "Brimacombe", path: "/brimacombe" },
     { name: "Bio Sciences North", path: "/bio-sciences-north" },
+    { name: "Bio Sciences South", path: "/bio-sciences-south" },
   ];
 
   return (
