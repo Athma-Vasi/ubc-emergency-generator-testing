@@ -11,7 +11,8 @@ type BuildingName =
   | "ICICS (Rooftop)"
   | "Brimacombe"
   | "Bio Sciences North"
-  | "Bio Sciences South";
+  | "Bio Sciences South"
+  | "Bio Sciences West";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

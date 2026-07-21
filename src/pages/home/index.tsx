@@ -15,6 +15,7 @@ function Home() {
     { name: "Brimacombe", path: "/brimacombe" },
     { name: "Bio Sciences North", path: "/bio-sciences-north" },
     { name: "Bio Sciences South", path: "/bio-sciences-south" },
+    { name: "Bio Sciences West", path: "/bio-sciences-west" },
   ];
 
   return (

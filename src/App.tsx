@@ -5,6 +5,8 @@ import BioSciencesNorth from "./pages/bio-sciences-north";
 import { bio_sciences_north_props } from "./pages/bio-sciences-north/info";
 import BioSciencesSouth from "./pages/bio-sciences-south";
 import { bio_sciences_south_props } from "./pages/bio-sciences-south/info";
+import BioSciencesWest from "./pages/bio-sciences-west";
+import { bio_sciences_west_props } from "./pages/bio-sciences-west/info";
 import Brimacombe from "./pages/brimacombe";
 import { brimacombe_props } from "./pages/brimacombe/info";
 import FairviewCrescent from "./pages/fairview-crescent";
@@ -65,6 +67,10 @@ function App() {
         <Route
           path="/bio-sciences-south"
           element={<BioSciencesSouth {...bio_sciences_south_props} />}
+        />
+        <Route
+          path="/bio-sciences-west"
+          element={<BioSciencesWest {...bio_sciences_west_props} />}
         />
       </Routes>
     </div>
