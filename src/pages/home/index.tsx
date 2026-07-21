@@ -13,6 +13,7 @@ function Home() {
     { name: "ICICS Ground", path: "/icics-ground" },
     { name: "ICICS Rooftop", path: "/icics-rooftop" },
     { name: "Brimacombe", path: "/brimacombe" },
+    { name: "Bio Sciences North", path: "/bio-sciences-north" },
   ];
 
   return (
