@@ -16,6 +16,7 @@ function Home() {
     { name: "Bio Sciences North", path: "/bio-sciences-north" },
     { name: "Bio Sciences South", path: "/bio-sciences-south" },
     { name: "Bio Sciences West", path: "/bio-sciences-west" },
+    { name: "Beaty Biodiversity Centre", path: "/beaty-biodiversity-centre" },
   ];
 
   return (

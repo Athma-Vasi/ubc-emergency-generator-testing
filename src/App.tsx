@@ -1,6 +1,8 @@
-import { Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
+import BeatyBiodiversityCentre from "./pages/beaty-biodiversity-centre";
+import { beaty_biodiversity_centre_props } from "./pages/beaty-biodiversity-centre/info";
 import BioSciencesNorth from "./pages/bio-sciences-north";
 import { bio_sciences_north_props } from "./pages/bio-sciences-north/info";
 import BioSciencesSouth from "./pages/bio-sciences-south";
@@ -31,7 +33,7 @@ import { winter_sports_arena_props } from "./pages/winter-sports-arena/info";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pharmacy" element={<Pharmacy {...pharmacy_props} />} />
@@ -72,8 +74,12 @@ function App() {
           path="/bio-sciences-west"
           element={<BioSciencesWest {...bio_sciences_west_props} />}
         />
+        <Route
+          path="/beaty-biodiversity-centre"
+          element={<BeatyBiodiversityCentre {...beaty_biodiversity_centre_props} />}
+        />
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 

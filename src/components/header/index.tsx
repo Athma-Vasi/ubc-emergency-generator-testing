@@ -12,7 +12,8 @@ type BuildingName =
   | "Brimacombe"
   | "Bio Sciences North"
   | "Bio Sciences South"
-  | "Bio Sciences West";
+  | "Bio Sciences West"
+  | "Beaty Biodiversity Centre";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
