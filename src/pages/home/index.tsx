@@ -20,6 +20,7 @@ function Home() {
     { name: "Chemical Physics", path: "/chemical-physics" },
     { name: "Buchanan D", path: "/buchanan-d" },
     { name: "Gage A South Tower", path: "/gage-a-south-tower" },
+    { name: "Gage B North Tower", path: "/gage-b-north-tower" },
   ];
 
   return (

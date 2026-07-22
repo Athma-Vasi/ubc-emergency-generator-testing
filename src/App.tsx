@@ -21,6 +21,8 @@ import ForestSciencesCentre from "./pages/forest-sciences-centre";
 import { forest_sciences_centre_props } from "./pages/forest-sciences-centre/info";
 import GageASouthTower from "./pages/gage-a-south-tower";
 import { gage_a_south_tower_props } from "./pages/gage-a-south-tower/info";
+import GageBNorthTower from "./pages/gage-b-north-tower";
+import { gage_b_north_tower_props } from "./pages/gage-b-north-tower/info";
 import GatewayHealth from "./pages/gateway-health";
 import { gateway_health_props } from "./pages/gateway-health/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
@@ -89,6 +91,10 @@ function App() {
         <Route
           path="/gage-a-south-tower"
           element={<GageASouthTower {...gage_a_south_tower_props} />}
+        />
+        <Route
+          path="/gage-b-north-tower"
+          element={<GageBNorthTower {...gage_b_north_tower_props} />}
         />
       </Routes>
     </BrowserRouter>
