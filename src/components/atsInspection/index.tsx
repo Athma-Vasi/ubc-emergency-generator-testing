@@ -6,7 +6,8 @@ type ATSInspectionProps = {
     | "TSC 800"
     | "Onan BT 600"
     | "TornaTech TFR 600/125/18"
-    | "Cummins OPTC A";
+    | "Cummins OPTC A"
+    | "Eaton ATC-300";
 };
 
 function ATSInspection({ atsKind }: ATSInspectionProps) {
@@ -53,7 +54,13 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                     "Ensure that Source 2 (Generator) Connected light is off.",
                     "Ensure that Source 2 (Generator) Available light is off.",
                   ]
-                : [];
+                : atsKind === "Eaton ATC-300"
+                  ? [
+                      "Ensure that Source 1: Available light is on and yellow.",
+                      "Ensure that Source 2: Available light is on and yellow.",
+                      "Ensure that Source 2: Connected light is off.",
+                    ]
+                  : [];
 
   const during_test_inspection =
     atsKind === "ASCO 7000"
@@ -98,7 +105,13 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                     "Ensure that Source 2 (Generator) Connected light is on.",
                     "Ensure that Source 2 (Generator) Available light is on.",
                   ]
-                : [];
+                : atsKind === "Eaton ATC-300"
+                  ? [
+                      "Ensure that Source 1: Available light is on and yellow.",
+                      "Ensure that Source 2: Available light is on and yellow.",
+                      "Ensure that Source 2: Connected light is on and amber.",
+                    ]
+                  : [];
 
   return (
     <section>

@@ -11,6 +11,8 @@ import BioSciencesWest from "./pages/bio-sciences-west";
 import { bio_sciences_west_props } from "./pages/bio-sciences-west/info";
 import Brimacombe from "./pages/brimacombe";
 import { brimacombe_props } from "./pages/brimacombe/info";
+import ChemicalPhysics from "./pages/chemical-physics";
+import { chemical_physics_props } from "./pages/chemical-physics/info";
 import FairviewCrescent from "./pages/fairview-crescent";
 import { fairview_crescent_props } from "./pages/fairview-crescent/info";
 import ForestSciencesCentre from "./pages/forest-sciences-centre";
@@ -78,6 +80,7 @@ function App() {
           path="/beaty-biodiversity-centre"
           element={<BeatyBiodiversityCentre {...beaty_biodiversity_centre_props} />}
         />
+        <Route path="/chemical-physics" element={<ChemicalPhysics {...chemical_physics_props} />} />
       </Routes>
     </BrowserRouter>
   );
