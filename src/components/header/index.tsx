@@ -14,7 +14,8 @@ type BuildingName =
   | "Bio Sciences South"
   | "Bio Sciences West"
   | "Beaty Biodiversity Centre"
-  | "Chemical Physics";
+  | "Chemical Physics"
+  | "Buchanan D";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

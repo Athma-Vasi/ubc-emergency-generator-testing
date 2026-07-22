@@ -7,7 +7,8 @@ type ATSInspectionProps = {
     | "Onan BT 600"
     | "TornaTech TFR 600/125/18"
     | "Cummins OPTC A"
-    | "Eaton ATC-300";
+    | "Eaton ATC-300"
+    | "Unknown";
 };
 
 function ATSInspection({ atsKind }: ATSInspectionProps) {
