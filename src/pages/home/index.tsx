@@ -19,6 +19,7 @@ function Home() {
     { name: "Beaty Biodiversity Centre", path: "/beaty-biodiversity-centre" },
     { name: "Chemical Physics", path: "/chemical-physics" },
     { name: "Buchanan D", path: "/buchanan-d" },
+    { name: "Gage A South Tower", path: "/gage-a-south-tower" },
   ];
 
   return (

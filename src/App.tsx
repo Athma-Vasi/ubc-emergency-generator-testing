@@ -19,6 +19,8 @@ import FairviewCrescent from "./pages/fairview-crescent";
 import { fairview_crescent_props } from "./pages/fairview-crescent/info";
 import ForestSciencesCentre from "./pages/forest-sciences-centre";
 import { forest_sciences_centre_props } from "./pages/forest-sciences-centre/info";
+import GageASouthTower from "./pages/gage-a-south-tower";
+import { gage_a_south_tower_props } from "./pages/gage-a-south-tower/info";
 import GatewayHealth from "./pages/gateway-health";
 import { gateway_health_props } from "./pages/gateway-health/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
@@ -84,6 +86,10 @@ function App() {
         />
         <Route path="/chemical-physics" element={<ChemicalPhysics {...chemical_physics_props} />} />
         <Route path="/buchanan-d" element={<BuchananD {...buchanan_d_props} />} />
+        <Route
+          path="/gage-a-south-tower"
+          element={<GageASouthTower {...gage_a_south_tower_props} />}
+        />
       </Routes>
     </BrowserRouter>
   );
