@@ -17,7 +17,8 @@ type BuildingName =
   | "Chemical Physics"
   | "Buchanan D"
   | "Gage A South Tower"
-  | "Gage B North Tower";
+  | "Gage B North Tower"
+  | "Museum of Anthropology";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
