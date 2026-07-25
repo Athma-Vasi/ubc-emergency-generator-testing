@@ -20,7 +20,7 @@ import egiSheet2 from "./assets/museum-of-anthropology-egi-sheet-2.jpeg";
 import generatorLocation1 from "./assets/museum-of-anthropology-gen-location.jpeg";
 
 const building_info: HeaderProps = {
-  accountNumber: 6030,
+  accountNumber: 6030_6041,
   address: "6393 NW Marine Drive Vancouver, BC, Canada V6T 1Z2",
   floors: [],
   locationName: "UBC Vancouver",
@@ -147,15 +147,20 @@ const generator_location: ImagesProps = {
 
 const notes: NotesProps = {
   additional: [
-    "Chillers 1 and 2 must be turned off prior to test.",
     "Grab Access Card from the security desk inside side entrance.",
-    "During and Post test, must check chillers 1 and 2 that there is no alarm.",
+    "Chillers 1 and 2 must be turned off prior to test.",
+    "During test, must confirm chillers 1 and 2 that there is no alarm.",
+    "Post test, call BMS to put chillers 1 and 2 back online.",
   ],
 };
 
 const museum_of_anthropology_props: MuseumOfAnthropologyProps = {
   buildingInfo: building_info,
   emergencyGeneratorInformation: emergency_generator_information,
+  routeToGenerator: generator_location,
+  routeToATS1And2AndChillers: ats_1_and_2_location,
+  routeTo3rdATSAndFirePanel: third_ats_and_fire_panel_route,
+  notes: notes,
 };
 
 export { museum_of_anthropology_props };

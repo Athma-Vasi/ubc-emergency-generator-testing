@@ -32,6 +32,8 @@ import ICICSGround from "./pages/icics-ground";
 import { icics_ground_props } from "./pages/icics-ground/info";
 import ICICSRooftop from "./pages/icics-rooftop";
 import { icics_rooftop_props } from "./pages/icics-rooftop/info";
+import MuseumOfAnthropology from "./pages/museum-of-anthropology";
+import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
 import { pharmacy_props } from "./pages/pharmacy/info";
 import TennisCentre from "./pages/tennis centre";
@@ -95,6 +97,10 @@ function App() {
         <Route
           path="/gage-b-north-tower"
           element={<GageBNorthTower {...gage_b_north_tower_props} />}
+        />
+        <Route
+          path="/museum-of-anthropology"
+          element={<MuseumOfAnthropology {...museum_of_anthropology_props} />}
         />
       </Routes>
     </BrowserRouter>
