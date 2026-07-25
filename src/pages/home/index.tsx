@@ -23,6 +23,7 @@ function Home() {
     { name: "Gage B North Tower", path: "/gage-b-north-tower" },
     { name: "Museum of Anthropology", path: "/museum-of-anthropology" },
     { name: "Chan Centre", path: "/chan-centre" },
+    { name: "Green College", path: "/green-college" },
   ];
 
   return (

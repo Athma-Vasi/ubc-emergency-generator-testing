@@ -27,6 +27,8 @@ import GageBNorthTower from "./pages/gage-b-north-tower";
 import { gage_b_north_tower_props } from "./pages/gage-b-north-tower/info";
 import GatewayHealth from "./pages/gateway-health";
 import { gateway_health_props } from "./pages/gateway-health/info";
+import GreenCollege from "./pages/green-college";
+import { green_college_props } from "./pages/green-college/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
 import { health_sciences_parkade_props } from "./pages/health-sciences-parkade/info";
 import Home from "./pages/home";
@@ -105,6 +107,7 @@ function App() {
           element={<MuseumOfAnthropology {...museum_of_anthropology_props} />}
         />
         <Route path="/chan-centre" element={<ChanCentre {...chan_centre_props} />} />
+        <Route path="/green-college" element={<GreenCollege {...green_college_props} />} />
       </Routes>
     </BrowserRouter>
   );
