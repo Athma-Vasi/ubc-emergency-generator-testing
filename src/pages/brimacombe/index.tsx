@@ -10,6 +10,7 @@ import Procedure from "../../components/procedure";
 
 type BrimacombeProps = {
   headerProps: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   generatorLocation: ImagesProps;
   routeToATSAndFirePanel: ImagesProps;
   routeToLastATS: ImagesProps;
@@ -18,6 +19,7 @@ type BrimacombeProps = {
 
 function Brimacombe({
   generatorLocation,
+  emergencyGeneratorInformation,
   headerProps,
   notesProps,
   routeToATSAndFirePanel,
@@ -26,6 +28,7 @@ function Brimacombe({
   return (
     <div className="building">
       <Header {...headerProps} />
+      <Images {...emergencyGeneratorInformation} />
       <Images {...generatorLocation} />
       <Images {...routeToATSAndFirePanel} />
       <Images {...routeToLastATS} />

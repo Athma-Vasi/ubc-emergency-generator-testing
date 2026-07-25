@@ -2,6 +2,8 @@ import type { BrimacombeProps } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
 import type { NotesProps } from "../../components/notes";
+import egiSheet1 from "./assets/brimacombe-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/brimacombe-egi-sheet-2.jpeg";
 import generatorLocation from "./assets/brimacombe-generator-location.jpeg";
 import atsFirePanelRoute1 from "./assets/brimacombe-route-to-ats-fire-panel-1.jpeg";
 import atsFirePanelRoute2 from "./assets/brimacombe-route-to-ats-fire-panel-2.jpeg";
@@ -50,6 +52,23 @@ const route_to_ats_and_fire_panel: ImagesProps = {
   ],
 };
 
+const emergency_generator_information: ImagesProps = {
+  description: "Brimacombe Emergency Generator Information",
+  name: "Brimacombe Emergency Generator Information",
+  images: [
+    {
+      alt: "Brimacombe Emergency Generator Information Sheet 1",
+      caption: "Brimacombe Emergency Generator Information Sheet: page 1",
+      src: egiSheet1,
+    },
+    {
+      alt: "Brimacombe Emergency Generator Information Sheet 2",
+      caption: "Brimacombe Emergency Generator Information Sheet: page 2",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const generatorLocationImage: ImagesProps = {
   description: "Here is the emergency generator located outside the Brimacombe building.",
   name: "Emergency Generator Location",
@@ -85,13 +104,14 @@ const notes_props: NotesProps = {
   additional: [
     "There are 4 ATS that need to be tested.",
     "ATS-1 (ASCO 300) and ATS-2 (ASCO 7000) are located in Room 42.",
-    "The higher amperage ATS-2 (ASCO 7000) should be tested first, followed by the lower amperage ATS-1 (ASCO 300).",
-    "The other two ATS' (ASCO 7000) are located in Main Electrical Room 70B.",
+    "The higher amperage ATS-2 (ASCO 7000) should be tested first, followed by the lower amperage ATS-1 (ASCO 300) for 30 mins.",
+    "The other two ATS' (ASCO 7000) are located in Main Electrical Room 70B and are transferred for 5 mins only.",
   ],
 };
 
 const brimacombe_props: BrimacombeProps = {
   headerProps: header_props,
+  emergencyGeneratorInformation: emergency_generator_information,
   generatorLocation: generatorLocationImage,
   routeToATSAndFirePanel: route_to_ats_and_fire_panel,
   routeToLastATS: route_to_last_ats,
