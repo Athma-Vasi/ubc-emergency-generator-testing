@@ -24,6 +24,7 @@ function Home() {
     { name: "Museum of Anthropology", path: "/museum-of-anthropology" },
     { name: "Chan Centre", path: "/chan-centre" },
     { name: "Green College", path: "/green-college" },
+    { name: "Rose Garden Parkade", path: "/rose-garden-parkade" },
   ];
 
   return (

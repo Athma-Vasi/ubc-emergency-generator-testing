@@ -20,7 +20,8 @@ type BuildingName =
   | "Gage B North Tower"
   | "Museum of Anthropology"
   | "Chan Centre"
-  | "Green College";
+  | "Green College"
+  | "Rose Garden Parkade";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

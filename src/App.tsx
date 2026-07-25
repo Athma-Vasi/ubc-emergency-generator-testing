@@ -40,6 +40,8 @@ import MuseumOfAnthropology from "./pages/museum-of-anthropology";
 import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
 import { pharmacy_props } from "./pages/pharmacy/info";
+import RoseGardenParkade from "./pages/rose-garden-parkade";
+import { rose_garden_parkade_props } from "./pages/rose-garden-parkade/info";
 import TennisCentre from "./pages/tennis centre";
 import { tennis_centre_props } from "./pages/tennis centre/info";
 import WinterSportsArena from "./pages/winter-sports-arena";
@@ -108,6 +110,10 @@ function App() {
         />
         <Route path="/chan-centre" element={<ChanCentre {...chan_centre_props} />} />
         <Route path="/green-college" element={<GreenCollege {...green_college_props} />} />
+        <Route
+          path="/rose-garden-parkade"
+          element={<RoseGardenParkade {...rose_garden_parkade_props} />}
+        />
       </Routes>
     </BrowserRouter>
   );
