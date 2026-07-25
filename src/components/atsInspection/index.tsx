@@ -4,6 +4,7 @@ type ATSInspectionProps = {
     | "ASCO 300"
     | "TSC 80"
     | "TSC 800"
+    | "TS 753MCJL-250A-600"
     | "Onan BT 600"
     | "TornaTech TFR 600/125/18"
     | "Cummins OPTC A"
@@ -61,7 +62,12 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                       "Ensure that Source 2: Available light is on and yellow.",
                       "Ensure that Source 2: Connected light is off.",
                     ]
-                  : [];
+                  : atsKind === "TS 753MCJL-250A-600"
+                    ? [
+                        "Ensure that 'Utility Supply Available' light is on.",
+                        "Ensure that 'Load on Utility Supply' light is on",
+                      ]
+                    : [];
 
   const during_test_inspection =
     atsKind === "ASCO 7000"
@@ -112,7 +118,14 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                       "Ensure that Source 2: Available light is on and yellow.",
                       "Ensure that Source 2: Connected light is on and amber.",
                     ]
-                  : [];
+                  : atsKind === "TS 753MCJL-250A-600"
+                    ? [
+                        "Ensure that 'Utility Supply Available' light is on.",
+                        "Ensure that 'Load on Utility Supply' light is off.",
+                        "Ensure that 'Generator Supply Available' light is on.",
+                        "Ensure that 'Load on Generator Supply' light is on.",
+                      ]
+                    : [];
 
   return (
     <section>

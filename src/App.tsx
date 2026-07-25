@@ -13,6 +13,8 @@ import Brimacombe from "./pages/brimacombe";
 import { brimacombe_props } from "./pages/brimacombe/info";
 import BuchananD from "./pages/buchanan-d";
 import { buchanan_d_props } from "./pages/buchanan-d/info";
+import ChanCentre from "./pages/chan-centre";
+import { chan_centre_props } from "./pages/chan-centre/info";
 import ChemicalPhysics from "./pages/chemical-physics";
 import { chemical_physics_props } from "./pages/chemical-physics/info";
 import FairviewCrescent from "./pages/fairview-crescent";
@@ -102,6 +104,7 @@ function App() {
           path="/museum-of-anthropology"
           element={<MuseumOfAnthropology {...museum_of_anthropology_props} />}
         />
+        <Route path="/chan-centre" element={<ChanCentre {...chan_centre_props} />} />
       </Routes>
     </BrowserRouter>
   );
