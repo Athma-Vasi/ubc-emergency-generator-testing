@@ -36,6 +36,8 @@ import ICICSGround from "./pages/icics-ground";
 import { icics_ground_props } from "./pages/icics-ground/info";
 import ICICSRooftop from "./pages/icics-rooftop";
 import { icics_rooftop_props } from "./pages/icics-rooftop/info";
+import KoernerLibrary from "./pages/koerner-library";
+import { koerner_library_props } from "./pages/koerner-library/info";
 import MuseumOfAnthropology from "./pages/museum-of-anthropology";
 import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
@@ -114,6 +116,7 @@ function App() {
           path="/rose-garden-parkade"
           element={<RoseGardenParkade {...rose_garden_parkade_props} />}
         />
+        <Route path="/koerner-library" element={<KoernerLibrary {...koerner_library_props} />} />
       </Routes>
     </BrowserRouter>
   );

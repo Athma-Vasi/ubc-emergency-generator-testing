@@ -25,6 +25,7 @@ function Home() {
     { name: "Chan Centre", path: "/chan-centre" },
     { name: "Green College", path: "/green-college" },
     { name: "Rose Garden Parkade", path: "/rose-garden-parkade" },
+    { name: "Koerner Library", path: "/koerner-library" },
   ];
 
   return (

@@ -9,6 +9,7 @@ type ATSInspectionProps = {
     | "TornaTech TFR 600/125/18"
     | "Cummins OPTC A"
     | "Eaton ATC-300"
+    | "TSBU-600V-250A"
     | "Unknown";
 };
 
@@ -67,7 +68,12 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                         "Ensure that 'Utility Supply Available' light is on.",
                         "Ensure that 'Load on Utility Supply' light is on",
                       ]
-                    : [];
+                    : atsKind === "TSBU-600V-250A"
+                      ? [
+                          "Ensure 'Load on Utility Supply' indicator light is on.",
+                          "Ensure 'Load on Generator Supply' indicator light is off.",
+                        ]
+                      : [];
 
   const during_test_inspection =
     atsKind === "ASCO 7000"
@@ -125,7 +131,12 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                         "Ensure that 'Generator Supply Available' light is on.",
                         "Ensure that 'Load on Generator Supply' light is on.",
                       ]
-                    : [];
+                    : atsKind === "TSBU-600V-250A"
+                      ? [
+                          "Ensure 'Load on Utility Supply' indicator light is on.",
+                          "Ensure 'Load on Generator Supply' indicator light is on.",
+                        ]
+                      : [];
 
   return (
     <section>

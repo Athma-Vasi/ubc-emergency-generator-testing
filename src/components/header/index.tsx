@@ -21,7 +21,8 @@ type BuildingName =
   | "Museum of Anthropology"
   | "Chan Centre"
   | "Green College"
-  | "Rose Garden Parkade";
+  | "Rose Garden Parkade"
+  | "Koerner Library";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
