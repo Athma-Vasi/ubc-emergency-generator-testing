@@ -10,6 +10,7 @@ type ATSInspectionProps = {
     | "Cummins OPTC A"
     | "Eaton ATC-300"
     | "TSBU-600V-250A"
+    | "Thomson GCS"
     | "Unknown";
 };
 
@@ -73,7 +74,9 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                           "Ensure 'Load on Utility Supply' indicator light is on.",
                           "Ensure 'Load on Generator Supply' indicator light is off.",
                         ]
-                      : [];
+                      : atsKind === "Thomson GCS"
+                        ? ["Add information."]
+                        : [];
 
   const during_test_inspection =
     atsKind === "ASCO 7000"
@@ -136,7 +139,9 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
                           "Ensure 'Load on Utility Supply' indicator light is on.",
                           "Ensure 'Load on Generator Supply' indicator light is on.",
                         ]
-                      : [];
+                      : atsKind === "Thomson GCS"
+                        ? ["Add information."]
+                        : [];
 
   return (
     <section>

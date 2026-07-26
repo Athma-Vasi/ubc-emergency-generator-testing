@@ -48,6 +48,8 @@ import Pharmacy from "./pages/pharmacy";
 import { pharmacy_props } from "./pages/pharmacy/info";
 import RoseGardenParkade from "./pages/rose-garden-parkade";
 import { rose_garden_parkade_props } from "./pages/rose-garden-parkade/info";
+import TallwoodHouse from "./pages/tallwood-house";
+import { tallwood_house_props } from "./pages/tallwood-house/info";
 import TennisCentre from "./pages/tennis centre";
 import { tennis_centre_props } from "./pages/tennis centre/info";
 import WinterSportsArena from "./pages/winter-sports-arena";
@@ -123,6 +125,7 @@ function App() {
         <Route path="/koerner-library" element={<KoernerLibrary {...koerner_library_props} />} />
         <Route path="/allard-hall" element={<AllardHall {...allard_hall_props} />} />
         <Route path="/brock-hall" element={<BrockHall {...brock_hall_props} />} />
+        <Route path="/tallwood-house" element={<TallwoodHouse {...tallwood_house_props} />} />
       </Routes>
     </BrowserRouter>
   );

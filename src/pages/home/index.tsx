@@ -28,6 +28,7 @@ function Home() {
     { name: "Koerner Library", path: "/koerner-library" },
     { name: "Allard Hall", path: "/allard-hall" },
     { name: "Brock Hall", path: "/brock-hall" },
+    { name: "Tallwood House", path: "/tallwood-house" },
   ];
 
   return (
