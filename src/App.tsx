@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
+import AllardHall from "./pages/allard-hall";
+import { allard_hall_props } from "./pages/allard-hall/info";
 import BeatyBiodiversityCentre from "./pages/beaty-biodiversity-centre";
 import { beaty_biodiversity_centre_props } from "./pages/beaty-biodiversity-centre/info";
 import BioSciencesNorth from "./pages/bio-sciences-north";
@@ -117,6 +119,7 @@ function App() {
           element={<RoseGardenParkade {...rose_garden_parkade_props} />}
         />
         <Route path="/koerner-library" element={<KoernerLibrary {...koerner_library_props} />} />
+        <Route path="/allard-hall" element={<AllardHall {...allard_hall_props} />} />
       </Routes>
     </BrowserRouter>
   );
