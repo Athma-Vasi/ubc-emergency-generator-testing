@@ -23,7 +23,8 @@ type BuildingName =
   | "Green College"
   | "Rose Garden Parkade"
   | "Koerner Library"
-  | "Allard Hall";
+  | "Allard Hall"
+  | "Brock Hall";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

@@ -13,6 +13,8 @@ import BioSciencesWest from "./pages/bio-sciences-west";
 import { bio_sciences_west_props } from "./pages/bio-sciences-west/info";
 import Brimacombe from "./pages/brimacombe";
 import { brimacombe_props } from "./pages/brimacombe/info";
+import BrockHall from "./pages/brock-hall";
+import { brock_hall_props } from "./pages/brock-hall/info";
 import BuchananD from "./pages/buchanan-d";
 import { buchanan_d_props } from "./pages/buchanan-d/info";
 import ChanCentre from "./pages/chan-centre";
@@ -120,6 +122,7 @@ function App() {
         />
         <Route path="/koerner-library" element={<KoernerLibrary {...koerner_library_props} />} />
         <Route path="/allard-hall" element={<AllardHall {...allard_hall_props} />} />
+        <Route path="/brock-hall" element={<BrockHall {...brock_hall_props} />} />
       </Routes>
     </BrowserRouter>
   );
