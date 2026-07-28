@@ -3,6 +3,7 @@ type ATSInspectionProps = {
     | "ASCO 7000"
     | "ASCO 300"
     | "TSC 80"
+    | "TSC 80e"
     | "TSC 800"
     | "TS 753MCJL-250A-600"
     | "Onan BT 600"
@@ -24,7 +25,7 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
           "Ensure that 'Transfer Switch Connected to Emergency' light is off.",
           "Ensure that 'Emergency Source Accepted' light is off.",
         ]
-      : atsKind === "TSC 80" || atsKind === "TSC 800"
+      : atsKind === "TSC 80" || atsKind === "TSC 800" || atsKind === "TSC 80e"
         ? [
             "Ensure that load is on utility power and not generator power.",
             "Ensure that utility-side indicators are green :'Utility Supply' light is on.",
@@ -89,7 +90,7 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
           "Ensure that 'Emergency Source Accepted' light is on.",
           "Ensure that panel indicates a countdown timer starting with : 'TD Emerg>Normal: 0:59min59s'.",
         ]
-      : atsKind === "TSC 80" || atsKind === "TSC 800"
+      : atsKind === "TSC 80" || atsKind === "TSC 800" || atsKind === "TSC 80e"
         ? [
             "Ensure that utility supply is available and stable during the test.",
             "Ensure that the generator is providing power to the load during the test.",

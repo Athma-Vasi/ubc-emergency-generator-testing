@@ -26,7 +26,8 @@ type BuildingName =
   | "Allard Hall"
   | "Brock Hall"
   | "Tallwood House"
-  | "Irving K. Barber Learning Centre";
+  | "Irving K. Barber Learning Centre"
+  | "Gage Tower East";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
