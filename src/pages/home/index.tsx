@@ -29,6 +29,7 @@ function Home() {
     { name: "Allard Hall", path: "/allard-hall" },
     { name: "Brock Hall", path: "/brock-hall" },
     { name: "Tallwood House", path: "/tallwood-house" },
+    { name: "Irving K. Barber Learning Centre", path: "/irving-k-barber" },
   ];
 
   return (

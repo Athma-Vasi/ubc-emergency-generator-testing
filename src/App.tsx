@@ -40,6 +40,8 @@ import ICICSGround from "./pages/icics-ground";
 import { icics_ground_props } from "./pages/icics-ground/info";
 import ICICSRooftop from "./pages/icics-rooftop";
 import { icics_rooftop_props } from "./pages/icics-rooftop/info";
+import IrvingKBarber from "./pages/irving-k-barber";
+import { irving_k_barber_props } from "./pages/irving-k-barber/info";
 import KoernerLibrary from "./pages/koerner-library";
 import { koerner_library_props } from "./pages/koerner-library/info";
 import MuseumOfAnthropology from "./pages/museum-of-anthropology";
@@ -126,6 +128,7 @@ function App() {
         <Route path="/allard-hall" element={<AllardHall {...allard_hall_props} />} />
         <Route path="/brock-hall" element={<BrockHall {...brock_hall_props} />} />
         <Route path="/tallwood-house" element={<TallwoodHouse {...tallwood_house_props} />} />
+        <Route path="/irving-k-barber" element={<IrvingKBarber {...irving_k_barber_props} />} />
       </Routes>
     </BrowserRouter>
   );

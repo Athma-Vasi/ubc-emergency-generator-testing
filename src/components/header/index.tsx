@@ -25,11 +25,14 @@ type BuildingName =
   | "Koerner Library"
   | "Allard Hall"
   | "Brock Hall"
-  | "Tallwood House";
+  | "Tallwood House"
+  | "Irving K. Barber Learning Centre";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
 type SectionLinks = { id: string; name: string };
+
+type MonitoringCompany = "Accurate Monitoring" | "Telus Monitoring";
 
 type HeaderProps = {
   name: BuildingName;
@@ -37,7 +40,7 @@ type HeaderProps = {
   address: string;
   floors: Array<number>;
   accountNumber: number;
-  monitoringCompany: string;
+  monitoringCompany: MonitoringCompany;
   monitoringCompanyContact: string;
   sectionLinks: Array<SectionLinks>;
 };
