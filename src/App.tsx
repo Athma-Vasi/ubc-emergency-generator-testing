@@ -17,6 +17,8 @@ import BrockHall from "./pages/brock-hall";
 import { brock_hall_props } from "./pages/brock-hall/info";
 import BuchananD from "./pages/buchanan-d";
 import { buchanan_d_props } from "./pages/buchanan-d/info";
+import BuchananTower from "./pages/buchanan-tower";
+import { buchanan_tower_props } from "./pages/buchanan-tower/info";
 import ChanCentre from "./pages/chan-centre";
 import { chan_centre_props } from "./pages/chan-centre/info";
 import ChemicalPhysics from "./pages/chemical-physics";
@@ -138,6 +140,7 @@ function App() {
           path="/gage-block-d-and-e"
           element={<GageBlockDAndE {...gage_block_d_and_e_props} />}
         />
+        <Route path="/buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
       </Routes>
     </BrowserRouter>
   );
