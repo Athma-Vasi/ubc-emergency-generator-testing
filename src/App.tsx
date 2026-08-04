@@ -29,6 +29,8 @@ import GageASouthTower from "./pages/gage-a-south-tower";
 import { gage_a_south_tower_props } from "./pages/gage-a-south-tower/info";
 import GageBNorthTower from "./pages/gage-b-north-tower";
 import { gage_b_north_tower_props } from "./pages/gage-b-north-tower/info";
+import GageBlockDAndE from "./pages/gage-block-d-and-e";
+import { gage_block_d_and_e_props } from "./pages/gage-block-d-and-e/info";
 import GageTowerEast from "./pages/gage-tower-east";
 import { gage_tower_east_props } from "./pages/gage-tower-east/info";
 import GatewayHealth from "./pages/gateway-health";
@@ -132,6 +134,10 @@ function App() {
         <Route path="/tallwood-house" element={<TallwoodHouse {...tallwood_house_props} />} />
         <Route path="/irving-k-barber" element={<IrvingKBarber {...irving_k_barber_props} />} />
         <Route path="/gage-tower-east" element={<GageTowerEast {...gage_tower_east_props} />} />
+        <Route
+          path="/gage-block-d-and-e"
+          element={<GageBlockDAndE {...gage_block_d_and_e_props} />}
+        />
       </Routes>
     </BrowserRouter>
   );

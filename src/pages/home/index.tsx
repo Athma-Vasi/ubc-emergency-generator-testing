@@ -31,6 +31,7 @@ function Home() {
     { name: "Tallwood House", path: "/tallwood-house" },
     { name: "Irving K. Barber Learning Centre", path: "/irving-k-barber" },
     { name: "Gage Tower East", path: "/gage-tower-east" },
+    { name: "Gage Block D and E", path: "/gage-block-d-and-e" },
   ];
 
   return (
