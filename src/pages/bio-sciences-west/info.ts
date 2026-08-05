@@ -15,12 +15,10 @@ import generatorRoute3 from "./assets/bio-sciences-west-generator-route-3.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 4006,
   address: "6270 University Boulevard Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Bio Sciences West",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

@@ -24,12 +24,10 @@ import thirdFirePanelRoute6 from "./assets/brock-hall-third-fire-panel-route-6.j
 const building_info: HeaderProps = {
   accountNumber: 5086_7031_7006,
   address: "1200-1874 East Mall, Vancouver BC V6T 1Z3, Canada",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Brock Hall",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {
@@ -167,7 +165,7 @@ const notes: NotesProps = {
     "Call BMS to shutdown AHU 1 & 2 before test",
     "Gen location behind brock commons south",
     "Brock hall fire panel located just behind the three elevators",
-    "Once transfer test from south: After ack alarm, go back up stairs then to brock commons south entrance , go through entrance and past the other doors to other round enclosure entrance, to green elevator to basement , take left to f100 room and ack alarm, then start test for other ats in same room. Then go to 120 electrical room and double check fire panel.",
+    "Once transfer test from south: After ack alarm, go back up stairs then to brock commons south entrance go through entrance and past the other doors to other round enclosure entrance, to green elevator to basement take left to f100 room and ack alarm, then start test for other ats in same room. Then go to 120 electrical room and double check fire panel.",
     "Post test, check fire panel in lobby.",
   ],
 };

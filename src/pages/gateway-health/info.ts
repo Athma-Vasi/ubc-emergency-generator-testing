@@ -13,12 +13,10 @@ import generatorRoute4 from "./assets/gateway-health-route-to-generator-4.jpeg";
 const header_props: HeaderProps = {
   accountNumber: 4048,
   address: "5955 University Blvd, Vancouver, BC",
-  floors: [1, 2, 3, 4, 5, 6],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Gateway Health",
-  sectionLinks: [],
 };
 
 const route_to_generator: ImagesProps = {

@@ -43,17 +43,14 @@ type HeaderProps = {
   name: BuildingName;
   locationName: LocationName;
   address: string;
-  floors: Array<number>;
   accountNumber: number;
   monitoringCompany: MonitoringCompany;
   monitoringCompanyContact: string;
-  sectionLinks: Array<SectionLinks>;
 };
 
 function Header({
   accountNumber,
   address,
-  floors,
   locationName,
   monitoringCompany,
   monitoringCompanyContact,
@@ -65,7 +62,6 @@ function Header({
       <section>
         <p>{`Location: ${locationName}`}</p>
         <p>{`Address: ${address}`}</p>
-        <p>{`Floors: ${floors.join(", ")}`}</p>
         <p>{`Account Number: ${accountNumber}`}</p>
         <p>{`Monitoring Company: ${monitoringCompany}`}</p>
         <p>{`Monitoring Company Contact: ${monitoringCompanyContact}`}</p>

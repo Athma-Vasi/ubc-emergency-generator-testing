@@ -22,12 +22,10 @@ import generatorLocation1 from "./assets/museum-of-anthropology-gen-location.jpe
 const building_info: HeaderProps = {
   accountNumber: 6030_6041,
   address: "6393 NW Marine Drive Vancouver, BC, Canada V6T 1Z2",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Museum of Anthropology",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

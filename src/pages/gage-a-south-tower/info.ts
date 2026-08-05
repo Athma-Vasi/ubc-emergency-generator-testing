@@ -11,12 +11,10 @@ import propaneTankLocation1 from "./assets/gage-a-south-tower-propane-tank-locat
 const building_info: HeaderProps = {
   accountNumber: 5065,
   address: "5959 Student Union Mall Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Gage A South Tower",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

@@ -8,12 +8,10 @@ import emergencyGeneratorInformation2 from "./assets/winter-sports-arena-egi-she
 const header_props: HeaderProps = {
   accountNumber: 7037,
   address: "2555 Wesbrook Mall Vancouver, BC Canada V6T 1Z3",
-  floors: [1],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Doug Mitchell Thunderbird Sports Centre",
-  sectionLinks: [],
 };
 
 const route_to_generator_and_ats: ImagesProps = {

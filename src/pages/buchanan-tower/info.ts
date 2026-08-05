@@ -8,12 +8,10 @@ import genRoute2 from "./assets/buchanan-tower-generator-route-2.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 9999_9999,
   address: "1873 East Mall, Vancouver BC V6T 1Z1, Canada",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Buchanan Tower",
-  sectionLinks: [],
 };
 
 const route_to_gen: ImagesProps = {

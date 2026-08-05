@@ -16,12 +16,10 @@ import genATSAndFPRoute9 from "./assets/irving-k-barber-gen-ats-fp-route-9.jpeg"
 const building_info: HeaderProps = {
   accountNumber: 6007,
   address: "1961 East Mall Vancouver, BC Canada V6T 1Z1",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Irving K. Barber Learning Centre",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

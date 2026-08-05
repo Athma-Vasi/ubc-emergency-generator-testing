@@ -6,12 +6,10 @@ import generatorATSLocation1 from "./assets/health-sciences-parkade-generator-at
 const header_props: HeaderProps = {
   accountNumber: 7016,
   address: "2250 Health Sciences Mall Vancouver, BC",
-  floors: [1, 2, 3],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Health Sciences Parkade",
-  sectionLinks: [],
 };
 
 const route_to_fire_alarm_panel: ImagesProps = {

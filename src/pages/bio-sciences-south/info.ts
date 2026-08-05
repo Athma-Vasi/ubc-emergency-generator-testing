@@ -14,12 +14,10 @@ import fireAlarmPanelRoute1 from "./assets/bio-sciences-south-fire-alarm-panel-r
 const building_info: HeaderProps = {
   accountNumber: 4006,
   address: "6270 University Boulevard Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Bio Sciences South",
-  sectionLinks: [],
 };
 
 const route_to_ats: ImagesProps = {

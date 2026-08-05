@@ -12,12 +12,10 @@ import genATSAndFPRoute4 from "./assets/green-college-route-to-gen-ats-fp-4.jpeg
 const building_info: HeaderProps = {
   accountNumber: 5068,
   address: "6201 Cecil Green Park Road Vancouver, BC Canada V6T 1Z1",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Green College",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

@@ -14,12 +14,10 @@ import generatorLocation2 from "./assets/acadia-park-high-rise-generator-locatio
 const header_props: HeaderProps = {
   accountNumber: 5025,
   address: "2725 Melfa Road, Vancouver, BC",
-  floors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Acadia Park High Rise",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

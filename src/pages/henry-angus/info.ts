@@ -11,12 +11,10 @@ import genLocation1 from "./assets/henry-angus-generator-location-1.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 9999_9999,
   address: "2053 Main Mall, Vancouver BC V6T 1Z2, Canada",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Henry Angus",
-  sectionLinks: [],
 };
 
 const generator_location: ImagesProps = {

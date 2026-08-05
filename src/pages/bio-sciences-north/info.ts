@@ -14,12 +14,10 @@ import generatorLocation1 from "./assets/bio-sciences-north-generator-location-1
 const building_info: HeaderProps = {
   accountNumber: 4044,
   address: "6270 University Boulevard Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Bio Sciences North",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

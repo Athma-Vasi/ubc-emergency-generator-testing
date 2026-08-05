@@ -14,12 +14,10 @@ import generatorLocation2 from "./assets/fairview-crescent-generator-location-2.
 const header_props: HeaderProps = {
   accountNumber: 5010,
   address: "2707 Tennis Crescent Vancouver, B.C. V6T 2C1",
-  floors: [1],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Fairview Crescent",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

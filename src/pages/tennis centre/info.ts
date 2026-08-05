@@ -14,12 +14,10 @@ import generatorATSLocation1 from "./assets/tennis-centre-parking-gen-location.j
 const header_props: HeaderProps = {
   accountNumber: 7010,
   address: "6160 Thunderbird Blvd, Vancouver BC V6T 1Z3, Canada",
-  floors: [1],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Tennis Centre",
-  sectionLinks: [],
 };
 
 const route_to_generator_and_ats: ImagesProps = {

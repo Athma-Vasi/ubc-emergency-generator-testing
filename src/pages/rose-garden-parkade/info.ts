@@ -11,12 +11,10 @@ import genATSAndFPRoute3 from "./assets/rose-garden-parkade-gen-ats-fp-route-3.j
 const building_info: HeaderProps = {
   accountNumber: 6042,
   address: "6278 North West Marine Drive Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Rose Garden Parkade",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

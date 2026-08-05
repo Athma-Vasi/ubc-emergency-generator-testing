@@ -16,12 +16,10 @@ import genAndParkingLocation from "./assets/allard-hall-parking-and-gen-location
 const building_info: HeaderProps = {
   accountNumber: 7014,
   address: "1822 East Mall, Vancouver BC V6T 1Y1, Canada",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Allard Hall",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

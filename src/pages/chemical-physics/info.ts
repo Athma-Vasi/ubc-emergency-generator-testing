@@ -14,12 +14,10 @@ import secondATSRoute2 from "./assets/chemical-physics-second-ats-route-2.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 6011,
   address: "6221 University Boulevard Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Chemical Physics",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

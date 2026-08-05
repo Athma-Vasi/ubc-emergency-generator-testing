@@ -15,12 +15,10 @@ import atsAndFPRoute8 from "./assets/tallwood-house-fp-ats-route-8.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 5084,
   address: "6088 Walter Gage Rd Vancouver",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Tallwood House",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

@@ -13,12 +13,10 @@ import genATSFirePanelRoute5 from "./assets/beaty-biodiversity-centre-gen-ats-fi
 const building_info: HeaderProps = {
   accountNumber: 4004,
   address: "2212 Main Mall Vancouver, BC Canada V6T 1Z4",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Beaty Biodiversity Centre",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

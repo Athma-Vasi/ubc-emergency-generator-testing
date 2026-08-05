@@ -8,12 +8,10 @@ import genATSAndFPRoute2 from "./assets/gage-block-d-and-e-gen-ats-fp-route-2.jp
 const building_info: HeaderProps = {
   accountNumber: 9999_9999,
   address: "5959 Student Union Boulevard Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Gage Block D and E",
-  sectionLinks: [],
 };
 
 const route_to_gen_ats_and_fp: ImagesProps = {

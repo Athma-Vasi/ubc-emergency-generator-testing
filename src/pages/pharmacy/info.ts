@@ -19,30 +19,10 @@ import generatorRoute2 from "./assets/generator-route-2.jpeg";
 const header_props: HeaderProps = {
   accountNumber: 7009,
   address: "2405 Wesbrook Mall Vancouver, BC Canada V6T 1Z3",
-  floors: [1, 2, 3, 4, 5],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Pharmacy",
-  sectionLinks: [
-    { id: "safety", name: "Safety" },
-    { id: "pre-test-requirements", name: "Pre-Test Requirements" },
-    {
-      id: "emergency-generator-information",
-      name: "Emergency Generator Information",
-    },
-    { id: "generator-route-photos", name: "Generator Route Photos" },
-    { id: "ats-route-photos", name: "ATS Route Photos" },
-    {
-      id: "fire-alarm-panel-route-photos",
-      name: "Fire Alarm Panel Route Photos",
-    },
-    { id: "pre-start-gen-inspection", name: "Pre-Start Gen Inspection" },
-    {
-      id: "pre-start-planon-checklist",
-      name: "Pre-Start Planon Checklist",
-    },
-  ],
 };
 
 const route_to_generators: ImagesProps = {

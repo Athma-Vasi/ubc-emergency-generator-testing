@@ -12,12 +12,10 @@ import generatorLocation1 from "./assets/buchanan-d-generator-location-1.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 6006,
   address: "1866 Main Mall Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Buchanan D",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

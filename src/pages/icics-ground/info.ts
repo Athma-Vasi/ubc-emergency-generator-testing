@@ -15,12 +15,10 @@ import routeToGenerator2 from "./assets/icics-ground-route-to-generator-2.jpeg";
 const header_props: HeaderProps = {
   accountNumber: 4011,
   address: "289-2366 Main Mall Vancouver, BC  V6T 1Z4 Canada",
-  floors: [1, 2, 3, 4],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "ICICS (Ground)",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

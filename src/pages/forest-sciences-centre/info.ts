@@ -11,12 +11,10 @@ import egiSheet2 from "./assets/forestry-sciences-egi-sheet-2.jpeg";
 const header_props: HeaderProps = {
   accountNumber: 4018,
   address: "2424 Main Mall, Vancouver BC V6T 1Z4, Canada",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Forest Sciences Centre",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

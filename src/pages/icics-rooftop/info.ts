@@ -9,12 +9,10 @@ import atsFirePanelGeneratorLocation2 from "./assets/icics-rooftop-gen-ats-fire-
 const headerProps: HeaderProps = {
   accountNumber: 4011,
   address: "289-2366 Main Mall Vancouver, BC  V6T 1Z4 Canada",
-  floors: [1, 2, 3, 4],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "ICICS (Rooftop)",
-  sectionLinks: [],
 };
 
 const emergencyGeneratorInformation: ImagesProps = {

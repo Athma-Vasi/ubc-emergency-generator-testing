@@ -16,12 +16,10 @@ import routeToElevators3 from "./assets/koerner-library-route-to-elevators-3.jpe
 const building_info: HeaderProps = {
   accountNumber: 6024,
   address: "1961 East Mall Vancouver, BC Canada V6T 1Z1",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Koerner Library",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

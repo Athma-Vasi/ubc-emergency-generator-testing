@@ -9,12 +9,10 @@ import generatorLocation1 from "./assets/gage-b-north-tower-generator-location-1
 const building_info: HeaderProps = {
   accountNumber: 5064,
   address: "5959 Student Union Mall Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Gage B North Tower",
-  sectionLinks: [],
 };
 
 const emergency_generator_information: ImagesProps = {

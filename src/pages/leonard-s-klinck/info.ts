@@ -22,12 +22,10 @@ import routeToFPAndGenAndATS9 from "./assets/klinck-route-to-gen-ats-fp-9.jpeg";
 const building_info: HeaderProps = {
   accountNumber: 9999_9999,
   address: "6356 Agricultural Road, Vancouver, BC V6T 1Z2",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Leonard S. Klinck Building",
-  sectionLinks: [],
 };
 
 const route_to_gen_ats_and_fp: ImagesProps = {

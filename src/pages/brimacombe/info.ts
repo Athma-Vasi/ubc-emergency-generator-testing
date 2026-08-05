@@ -15,12 +15,10 @@ import routeToRestOfATS2 from "./assets/brimacombe-route-to-rest-ats-2.jpeg";
 const header_props: HeaderProps = {
   accountNumber: 9999999,
   address: "2355 East Mall Vancouver, BC",
-  floors: [],
   locationName: "UBC Vancouver",
   monitoringCompany: "Accurate Monitoring",
   monitoringCompanyContact: "604-777-3425",
   name: "Brimacombe",
-  sectionLinks: [],
 };
 
 const route_to_ats_and_fire_panel: ImagesProps = {
