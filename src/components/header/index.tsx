@@ -29,7 +29,8 @@ type BuildingName =
   | "Irving K. Barber Learning Centre"
   | "Gage Tower East"
   | "Gage Block D and E"
-  | "Buchanan Tower";
+  | "Buchanan Tower"
+  | "Leonard S. Klinck Building";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

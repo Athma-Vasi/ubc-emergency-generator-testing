@@ -33,6 +33,7 @@ function Home() {
     { name: "Gage Tower East", path: "/gage-tower-east" },
     { name: "Gage Block D and E", path: "/gage-block-d-and-e" },
     { name: "Buchanan Tower", path: "/buchanan-tower" },
+    { name: "Leonard S. Klinck", path: "/leonard-s-klinck" },
   ];
 
   return (

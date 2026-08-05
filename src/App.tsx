@@ -50,6 +50,8 @@ import IrvingKBarber from "./pages/irving-k-barber";
 import { irving_k_barber_props } from "./pages/irving-k-barber/info";
 import KoernerLibrary from "./pages/koerner-library";
 import { koerner_library_props } from "./pages/koerner-library/info";
+import LeonardSKlinck from "./pages/leonard-s-klinck";
+import { leonard_s_klinck_props } from "./pages/leonard-s-klinck/info";
 import MuseumOfAnthropology from "./pages/museum-of-anthropology";
 import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
@@ -141,6 +143,7 @@ function App() {
           element={<GageBlockDAndE {...gage_block_d_and_e_props} />}
         />
         <Route path="/buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
+        <Route path="/leonard-s-klinck" element={<LeonardSKlinck {...leonard_s_klinck_props} />} />
       </Routes>
     </BrowserRouter>
   );
