@@ -8,24 +8,26 @@ import type { NotesProps } from "../../components/notes";
 import Notes from "../../components/notes";
 import Procedure from "../../components/procedure";
 
-type GageBlockDAndEProps = {
+type HenryAngusProps = {
   buildingInfo: HeaderProps;
-  routeToGenATSAndFP: ImagesProps;
+  generatorLocation: ImagesProps;
+  atsAndFPLocation: ImagesProps;
   notes: NotesProps;
 };
 
-function GageBlockDAndE({ buildingInfo, notes, routeToGenATSAndFP }: GageBlockDAndEProps) {
+function HenryAngus({ atsAndFPLocation, buildingInfo, generatorLocation, notes }: HenryAngusProps) {
   return (
     <div className="building">
       <Header {...buildingInfo} />
-      <Images {...routeToGenATSAndFP} />
-      <Notes {...notes} />
+      <Images {...generatorLocation} />
+      <Images {...atsAndFPLocation} />
       <Checklist />
-      <ATSInspection atsKind="ASCO 300" />
+      <ATSInspection atsKind="Eaton ATC-300" />
+      <Notes {...notes} />
       <Procedure />
     </div>
   );
 }
 
-export default GageBlockDAndE;
-export type { GageBlockDAndEProps };
+export default HenryAngus;
+export type { HenryAngusProps };

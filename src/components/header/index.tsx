@@ -30,7 +30,8 @@ type BuildingName =
   | "Gage Tower East"
   | "Gage Block D and E"
   | "Buchanan Tower"
-  | "Leonard S. Klinck Building";
+  | "Leonard S. Klinck Building"
+  | "Henry Angus";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 

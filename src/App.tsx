@@ -41,6 +41,8 @@ import GreenCollege from "./pages/green-college";
 import { green_college_props } from "./pages/green-college/info";
 import HealthSciencesParkade from "./pages/health-sciences-parkade";
 import { health_sciences_parkade_props } from "./pages/health-sciences-parkade/info";
+import HenryAngus from "./pages/henry-angus";
+import { henry_angus_props } from "./pages/henry-angus/info";
 import Home from "./pages/home";
 import ICICSGround from "./pages/icics-ground";
 import { icics_ground_props } from "./pages/icics-ground/info";
@@ -144,6 +146,7 @@ function App() {
         />
         <Route path="/buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
         <Route path="/leonard-s-klinck" element={<LeonardSKlinck {...leonard_s_klinck_props} />} />
+        <Route path="/henry-angus" element={<HenryAngus {...henry_angus_props} />} />
       </Routes>
     </BrowserRouter>
   );
