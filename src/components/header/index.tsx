@@ -35,8 +35,6 @@ type BuildingName =
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
-type SectionLinks = { id: string; name: string };
-
 type MonitoringCompany = "Accurate Monitoring" | "Telus Monitoring";
 
 type HeaderProps = {

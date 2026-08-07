@@ -4,6 +4,6 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/ubc-emergency-generator-testing/",
   plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
 });

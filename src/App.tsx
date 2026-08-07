@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import AllardHall from "./pages/allard-hall";
@@ -69,86 +69,86 @@ import { winter_sports_arena_props } from "./pages/winter-sports-arena/info";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pharmacy" element={<Pharmacy {...pharmacy_props} />} />
-        <Route path="/tennis-centre" element={<TennisCentre {...tennis_centre_props} />} />
+    <Routes>
+      <Route path="ubc-emergency-generator-testing">
+        <Route index element={<Home />} />
+        <Route path="pharmacy" element={<Pharmacy {...pharmacy_props} />} />
+        <Route path="tennis-centre" element={<TennisCentre {...tennis_centre_props} />} />
         <Route
-          path="/winter-sports-arena"
+          path="winter-sports-arena"
           element={<WinterSportsArena {...winter_sports_arena_props} />}
         />
         <Route
-          path="/health-sciences-parkade"
+          path="health-sciences-parkade"
           element={<HealthSciencesParkade {...health_sciences_parkade_props} />}
         />
         <Route
-          path="/fairview-crescent"
+          path="fairview-crescent"
           element={<FairviewCrescent {...fairview_crescent_props} />}
         />
         <Route
-          path="/acadia-park-high-rise"
+          path="acadia-park-high-rise"
           element={<AcadiaParkHighRise {...acadia_park_high_rise_props} />}
         />
-        <Route path="/gateway-health" element={<GatewayHealth {...gateway_health_props} />} />
+        <Route path="gateway-health" element={<GatewayHealth {...gateway_health_props} />} />
         <Route
-          path="/forest-sciences-centre"
+          path="forest-sciences-centre"
           element={<ForestSciencesCentre {...forest_sciences_centre_props} />}
         />
-        <Route path="/icics-ground" element={<ICICSGround {...icics_ground_props} />} />
-        <Route path="/icics-rooftop" element={<ICICSRooftop {...icics_rooftop_props} />} />
-        <Route path="/brimacombe" element={<Brimacombe {...brimacombe_props} />} />
+        <Route path="icics-ground" element={<ICICSGround {...icics_ground_props} />} />
+        <Route path="icics-rooftop" element={<ICICSRooftop {...icics_rooftop_props} />} />
+        <Route path="brimacombe" element={<Brimacombe {...brimacombe_props} />} />
         <Route
-          path="/bio-sciences-north"
+          path="bio-sciences-north"
           element={<BioSciencesNorth {...bio_sciences_north_props} />}
         />
         <Route
-          path="/bio-sciences-south"
+          path="bio-sciences-south"
           element={<BioSciencesSouth {...bio_sciences_south_props} />}
         />
         <Route
-          path="/bio-sciences-west"
+          path="bio-sciences-west"
           element={<BioSciencesWest {...bio_sciences_west_props} />}
         />
         <Route
-          path="/beaty-biodiversity-centre"
+          path="beaty-biodiversity-centre"
           element={<BeatyBiodiversityCentre {...beaty_biodiversity_centre_props} />}
         />
-        <Route path="/chemical-physics" element={<ChemicalPhysics {...chemical_physics_props} />} />
-        <Route path="/buchanan-d" element={<BuchananD {...buchanan_d_props} />} />
+        <Route path="chemical-physics" element={<ChemicalPhysics {...chemical_physics_props} />} />
+        <Route path="buchanan-d" element={<BuchananD {...buchanan_d_props} />} />
         <Route
-          path="/gage-a-south-tower"
+          path="gage-a-south-tower"
           element={<GageASouthTower {...gage_a_south_tower_props} />}
         />
         <Route
-          path="/gage-b-north-tower"
+          path="gage-b-north-tower"
           element={<GageBNorthTower {...gage_b_north_tower_props} />}
         />
         <Route
-          path="/museum-of-anthropology"
+          path="museum-of-anthropology"
           element={<MuseumOfAnthropology {...museum_of_anthropology_props} />}
         />
-        <Route path="/chan-centre" element={<ChanCentre {...chan_centre_props} />} />
-        <Route path="/green-college" element={<GreenCollege {...green_college_props} />} />
+        <Route path="chan-centre" element={<ChanCentre {...chan_centre_props} />} />
+        <Route path="green-college" element={<GreenCollege {...green_college_props} />} />
         <Route
-          path="/rose-garden-parkade"
+          path="rose-garden-parkade"
           element={<RoseGardenParkade {...rose_garden_parkade_props} />}
         />
-        <Route path="/koerner-library" element={<KoernerLibrary {...koerner_library_props} />} />
-        <Route path="/allard-hall" element={<AllardHall {...allard_hall_props} />} />
-        <Route path="/brock-hall" element={<BrockHall {...brock_hall_props} />} />
-        <Route path="/tallwood-house" element={<TallwoodHouse {...tallwood_house_props} />} />
-        <Route path="/irving-k-barber" element={<IrvingKBarber {...irving_k_barber_props} />} />
-        <Route path="/gage-tower-east" element={<GageTowerEast {...gage_tower_east_props} />} />
+        <Route path="koerner-library" element={<KoernerLibrary {...koerner_library_props} />} />
+        <Route path="allard-hall" element={<AllardHall {...allard_hall_props} />} />
+        <Route path="brock-hall" element={<BrockHall {...brock_hall_props} />} />
+        <Route path="tallwood-house" element={<TallwoodHouse {...tallwood_house_props} />} />
+        <Route path="irving-k-barber" element={<IrvingKBarber {...irving_k_barber_props} />} />
+        <Route path="gage-tower-east" element={<GageTowerEast {...gage_tower_east_props} />} />
         <Route
-          path="/gage-block-d-and-e"
+          path="gage-block-d-and-e"
           element={<GageBlockDAndE {...gage_block_d_and_e_props} />}
         />
-        <Route path="/buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
-        <Route path="/leonard-s-klinck" element={<LeonardSKlinck {...leonard_s_klinck_props} />} />
-        <Route path="/henry-angus" element={<HenryAngus {...henry_angus_props} />} />
-      </Routes>
-    </BrowserRouter>
+        <Route path="buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
+        <Route path="leonard-s-klinck" element={<LeonardSKlinck {...leonard_s_klinck_props} />} />
+        <Route path="henry-angus" element={<HenryAngus {...henry_angus_props} />} />
+      </Route>
+    </Routes>
   );
 }
 

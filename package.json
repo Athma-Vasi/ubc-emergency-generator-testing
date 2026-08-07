@@ -2,6 +2,7 @@
   "name": "ubc-emergency-generator-testing",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://athma-vasi.github.io/ubc-emergency-generator-testing/",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",

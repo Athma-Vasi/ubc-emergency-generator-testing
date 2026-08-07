@@ -1,40 +1,41 @@
+import { Link } from "react-router";
 import Safety from "../../components/safety";
 
 function Home() {
   const building_links = [
-    { name: "Pharmacy", path: "/pharmacy" },
-    { name: "Tennis Centre", path: "/tennis-centre" },
-    { name: "Doug Mitchell Thunderbird Sports Centre", path: "/winter-sports-arena" },
-    { name: "Health Sciences Parkade", path: "/health-sciences-parkade" },
-    { name: "Fairview Crescent", path: "/fairview-crescent" },
-    { name: "Acadia Park High Rise", path: "/acadia-park-high-rise" },
-    { name: "Gateway Health", path: "/gateway-health" },
-    { name: "Forest Sciences Centre", path: "/forest-sciences-centre" },
-    { name: "ICICS Ground", path: "/icics-ground" },
-    { name: "ICICS Rooftop", path: "/icics-rooftop" },
-    { name: "Brimacombe", path: "/brimacombe" },
-    { name: "Bio Sciences North", path: "/bio-sciences-north" },
-    { name: "Bio Sciences South", path: "/bio-sciences-south" },
-    { name: "Bio Sciences West", path: "/bio-sciences-west" },
-    { name: "Beaty Biodiversity Centre", path: "/beaty-biodiversity-centre" },
-    { name: "Chemical Physics", path: "/chemical-physics" },
-    { name: "Buchanan D", path: "/buchanan-d" },
-    { name: "Gage A South Tower", path: "/gage-a-south-tower" },
-    { name: "Gage B North Tower", path: "/gage-b-north-tower" },
-    { name: "Museum of Anthropology", path: "/museum-of-anthropology" },
-    { name: "Chan Centre", path: "/chan-centre" },
-    { name: "Green College", path: "/green-college" },
-    { name: "Rose Garden Parkade", path: "/rose-garden-parkade" },
-    { name: "Koerner Library", path: "/koerner-library" },
-    { name: "Allard Hall", path: "/allard-hall" },
-    { name: "Brock Hall", path: "/brock-hall" },
-    { name: "Tallwood House", path: "/tallwood-house" },
-    { name: "Irving K. Barber Learning Centre", path: "/irving-k-barber" },
-    { name: "Gage Tower East", path: "/gage-tower-east" },
-    { name: "Gage Block D and E", path: "/gage-block-d-and-e" },
-    { name: "Buchanan Tower", path: "/buchanan-tower" },
-    { name: "Leonard S. Klinck", path: "/leonard-s-klinck" },
-    { name: "Henry Angus", path: "/henry-angus" },
+    { name: "Pharmacy", path: "./pharmacy" },
+    { name: "Tennis Centre", path: "./tennis-centre" },
+    { name: "Doug Mitchell Thunderbird Sports Centre", path: "./winter-sports-arena" },
+    { name: "Health Sciences Parkade", path: "./health-sciences-parkade" },
+    { name: "Fairview Crescent", path: "./fairview-crescent" },
+    { name: "Acadia Park High Rise", path: "./acadia-park-high-rise" },
+    { name: "Gateway Health", path: "./gateway-health" },
+    { name: "Forest Sciences Centre", path: "./forest-sciences-centre" },
+    { name: "ICICS Ground", path: "./icics-ground" },
+    { name: "ICICS Rooftop", path: "./icics-rooftop" },
+    { name: "Brimacombe", path: "./brimacombe" },
+    { name: "Bio Sciences North", path: "./bio-sciences-north" },
+    { name: "Bio Sciences South", path: "./bio-sciences-south" },
+    { name: "Bio Sciences West", path: "./bio-sciences-west" },
+    { name: "Beaty Biodiversity Centre", path: "./beaty-biodiversity-centre" },
+    { name: "Chemical Physics", path: "./chemical-physics" },
+    { name: "Buchanan D", path: "./buchanan-d" },
+    { name: "Gage A South Tower", path: "./gage-a-south-tower" },
+    { name: "Gage B North Tower", path: "./gage-b-north-tower" },
+    { name: "Museum of Anthropology", path: "./museum-of-anthropology" },
+    { name: "Chan Centre", path: "./chan-centre" },
+    { name: "Green College", path: "./green-college" },
+    { name: "Rose Garden Parkade", path: "./rose-garden-parkade" },
+    { name: "Koerner Library", path: "./koerner-library" },
+    { name: "Allard Hall", path: "./allard-hall" },
+    { name: "Brock Hall", path: "./brock-hall" },
+    { name: "Tallwood House", path: "./tallwood-house" },
+    { name: "Irving K. Barber Learning Centre", path: "./irving-k-barber" },
+    { name: "Gage Tower East", path: "./gage-tower-east" },
+    { name: "Gage Block D and E", path: "./gage-block-d-and-e" },
+    { name: "Buchanan Tower", path: "./buchanan-tower" },
+    { name: "Leonard S. Klinck", path: "./leonard-s-klinck" },
+    { name: "Henry Angus", path: "./henry-angus" },
   ];
 
   return (
@@ -55,7 +56,7 @@ function Home() {
       <ul>
         {building_links.map((link, index) => (
           <li key={`${index}-${link.name}`}>
-            <a href={link.path}>{link.name}</a>
+            <Link to={link.path}>{link.name}</Link>
           </li>
         ))}
       </ul>
