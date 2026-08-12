@@ -1,4 +1,8 @@
 import { Route, Routes } from "react-router";
+import Manual from "./components/equipment";
+import EquipmentCard from "./components/equipment/equipmentCard";
+import EquipmentFileViewer from "./components/equipment/equipmentFileViewer";
+import EquipmentLibrary from "./components/equipment/equipmentLibrary";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import AllardHall from "./pages/allard-hall";
@@ -147,6 +151,12 @@ function App() {
         <Route path="buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
         <Route path="leonard-s-klinck" element={<LeonardSKlinck {...leonard_s_klinck_props} />} />
         <Route path="henry-angus" element={<HenryAngus {...henry_angus_props} />} />
+        <Route path="manual-testing" element={<Manual {...{}} />} />
+
+        <Route path="equipment-library">
+          <Route index element={<EquipmentLibrary />} />
+          <Route path=":equipmentId" element={<EquipmentFileViewer />} />
+        </Route>
       </Route>
     </Routes>
   );
