@@ -1,8 +1,4 @@
 import { Route, Routes } from "react-router";
-import Manual from "./components/equipment";
-import EquipmentCard from "./components/equipment/equipmentCard";
-import EquipmentFileViewer from "./components/equipment/equipmentFileViewer";
-import EquipmentLibrary from "./components/equipment/equipmentLibrary";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import AllardHall from "./pages/allard-hall";
@@ -58,6 +54,8 @@ import KoernerLibrary from "./pages/koerner-library";
 import { koerner_library_props } from "./pages/koerner-library/info";
 import LeonardSKlinck from "./pages/leonard-s-klinck";
 import { leonard_s_klinck_props } from "./pages/leonard-s-klinck/info";
+import LowerMallResearch from "./pages/lower-mall-research";
+import { lower_mall_research_props } from "./pages/lower-mall-research/info";
 import MuseumOfAnthropology from "./pages/museum-of-anthropology";
 import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
@@ -151,12 +149,10 @@ function App() {
         <Route path="buchanan-tower" element={<BuchananTower {...buchanan_tower_props} />} />
         <Route path="leonard-s-klinck" element={<LeonardSKlinck {...leonard_s_klinck_props} />} />
         <Route path="henry-angus" element={<HenryAngus {...henry_angus_props} />} />
-        <Route path="manual-testing" element={<Manual {...{}} />} />
-
-        <Route path="equipment-library">
-          <Route index element={<EquipmentLibrary />} />
-          <Route path=":equipmentId" element={<EquipmentFileViewer />} />
-        </Route>
+        <Route
+          path="lower-mall-research"
+          element={<LowerMallResearch {...lower_mall_research_props} />}
+        />
       </Route>
     </Routes>
   );
