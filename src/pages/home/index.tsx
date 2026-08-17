@@ -36,8 +36,8 @@ function Home() {
     { name: "Buchanan Tower", path: "./buchanan-tower" },
     { name: "Leonard S. Klinck", path: "./leonard-s-klinck" },
     { name: "Henry Angus", path: "./henry-angus" },
-    { name: "Manual Testing", path: "./manual-testing" },
     { name: "Lower Mall Research Building", path: "./lower-mall-research" },
+    { name: "Bioenergy Research and Demonstration Facility (BRDF)", path: "./brdf" },
   ];
 
   return (

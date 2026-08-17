@@ -11,6 +11,8 @@ import BioSciencesSouth from "./pages/bio-sciences-south";
 import { bio_sciences_south_props } from "./pages/bio-sciences-south/info";
 import BioSciencesWest from "./pages/bio-sciences-west";
 import { bio_sciences_west_props } from "./pages/bio-sciences-west/info";
+import BRDF from "./pages/brdf";
+import { brdf_props } from "./pages/brdf/info";
 import Brimacombe from "./pages/brimacombe";
 import { brimacombe_props } from "./pages/brimacombe/info";
 import BrockHall from "./pages/brock-hall";
@@ -153,6 +155,7 @@ function App() {
           path="lower-mall-research"
           element={<LowerMallResearch {...lower_mall_research_props} />}
         />
+        <Route path="brdf" element={<BRDF {...brdf_props} />} />
       </Route>
     </Routes>
   );
