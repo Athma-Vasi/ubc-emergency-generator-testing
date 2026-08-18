@@ -38,6 +38,8 @@ function Home() {
     { name: "Henry Angus", path: "./henry-angus" },
     { name: "Lower Mall Research Building", path: "./lower-mall-research" },
     { name: "Bioenergy Research and Demonstration Facility (BRDF)", path: "./brdf" },
+    { name: "Marine Buildings 1&4", path: "./marine-buildings-1and4" },
+    { name: "Marine Buildings 5&6", path: "./marine-buildings-5and6" },
   ];
 
   return (

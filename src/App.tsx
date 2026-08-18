@@ -58,6 +58,8 @@ import LeonardSKlinck from "./pages/leonard-s-klinck";
 import { leonard_s_klinck_props } from "./pages/leonard-s-klinck/info";
 import LowerMallResearch from "./pages/lower-mall-research";
 import { lower_mall_research_props } from "./pages/lower-mall-research/info";
+import MarineBuildings1And4 from "./pages/marine-buildings-1&4";
+import { marine_buildings_1_and_4_props } from "./pages/marine-buildings-1&4/info";
 import MuseumOfAnthropology from "./pages/museum-of-anthropology";
 import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
@@ -156,6 +158,10 @@ function App() {
           element={<LowerMallResearch {...lower_mall_research_props} />}
         />
         <Route path="brdf" element={<BRDF {...brdf_props} />} />
+        <Route
+          path="marine-buildings-1and4"
+          element={<MarineBuildings1And4 {...marine_buildings_1_and_4_props} />}
+        />
       </Route>
     </Routes>
   );

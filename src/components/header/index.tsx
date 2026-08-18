@@ -33,7 +33,9 @@ type BuildingName =
   | "Leonard S. Klinck Building"
   | "Henry Angus"
   | "Lower Mall Research Building"
-  | "Bioenergy Research and Demonstration Facility (BRDF)";
+  | "Bioenergy Research and Demonstration Facility (BRDF)"
+  | "Marine Buildings 1&4"
+  | "Marine Buildings 5&6";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
