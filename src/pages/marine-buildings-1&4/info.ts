@@ -19,6 +19,7 @@ const building_info: HeaderProps = {
 const notes: NotesProps = {
   additional: [
     "Must radio elevator tech prior to test start.",
+    "Ensure to let monitoring company know to bypass supervisory test and alarm for the duration of all marine buildings test.",
     "Must grab access card from front desk.",
     "One generator shared between Marine Buildings 1&4.",
     "There are two ATS', one for each building. Alternate each ATS for short load test.",

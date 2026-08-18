@@ -60,6 +60,8 @@ import LowerMallResearch from "./pages/lower-mall-research";
 import { lower_mall_research_props } from "./pages/lower-mall-research/info";
 import MarineBuildings1And4 from "./pages/marine-buildings-1&4";
 import { marine_buildings_1_and_4_props } from "./pages/marine-buildings-1&4/info";
+import MarineBuildings5And6 from "./pages/marine-buildings-5&6";
+import { marine_buildings_5_and_6_props } from "./pages/marine-buildings-5&6/info";
 import MuseumOfAnthropology from "./pages/museum-of-anthropology";
 import { museum_of_anthropology_props } from "./pages/museum-of-anthropology/info";
 import Pharmacy from "./pages/pharmacy";
@@ -161,6 +163,10 @@ function App() {
         <Route
           path="marine-buildings-1and4"
           element={<MarineBuildings1And4 {...marine_buildings_1_and_4_props} />}
+        />
+        <Route
+          path="marine-buildings-5and6"
+          element={<MarineBuildings5And6 {...marine_buildings_5_and_6_props} />}
         />
       </Route>
     </Routes>
