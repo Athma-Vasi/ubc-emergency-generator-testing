@@ -3,6 +3,7 @@ import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
 import fireAlarmPanelLocation1 from "./assets/health-sciences-parkade-fire-alarm-panel-location.jpeg";
 import generatorATSLocation1 from "./assets/health-sciences-parkade-generator-ats-location.jpeg";
+
 const header_props: HeaderProps = {
   accountNumber: 7016,
   address: "2250 Health Sciences Mall Vancouver, BC",

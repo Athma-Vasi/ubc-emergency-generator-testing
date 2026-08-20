@@ -6,6 +6,8 @@ import fpAtsGenLocation1 from "./assets/marine-buildings-1&4-fp-ats-gen-location
 import fpAtsGenLocation2 from "./assets/marine-buildings-1&4-fp-ats-gen-location-2.jpeg";
 import fpAtsGenLocation3 from "./assets/marine-buildings-1&4-fp-ats-gen-location-3.jpeg";
 import fpAtsGenLocation4 from "./assets/marine-buildings-1&4-fp-ats-gen-location-4.jpeg";
+import egiSheet1 from "./assets/marine-buildings-1and4-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/marine-buildings-1and4-egi-sheet-2.jpeg";
 
 const building_info: HeaderProps = {
   accountNumber: 5066_5069,
@@ -16,11 +18,29 @@ const building_info: HeaderProps = {
   name: "Marine Buildings 1&4",
 };
 
+const emergency_generator_information: ImagesProps = {
+  description: "Marine Buildings 1&4 Emergency Generator Information",
+  name: "Marine Buildings 1&4 Emergency Generator Information",
+  images: [
+    {
+      alt: "Marine Buildings 1&4 Emergency Generator Information Sheet 1",
+      caption: "Marine Buildings 1&4 Emergency Generator Information Sheet: page 1",
+      src: egiSheet1,
+    },
+    {
+      alt: "Marine Buildings 1&4 Emergency Generator Information Sheet 2",
+      caption: "Marine Buildings 1&4 Emergency Generator Information Sheet: page 2",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const notes: NotesProps = {
   additional: [
     "Must radio elevator tech prior to test start.",
     "Ensure to let monitoring company know to bypass supervisory test and alarm for the duration of all marine buildings test.",
-    "Must grab access card from front desk.",
+    "UN numbers for all marine buildings = B1: 5066; B2: 5067; B3: 5075; B4: 5069; B5: 5070; B6: 5071.",
+    "Must grab access card from front desk, which is located in a separate building towards the centre of the complex.",
     "One generator shared between Marine Buildings 1&4.",
     "There are two ATS', one for each building. Alternate each ATS for short load test.",
     "Once the 2nd ATS is on, double check the generator to ensure normal operation before stopping the short load test.",
@@ -57,6 +77,7 @@ const fp_ats_gen_location: ImagesProps = {
 
 const marine_buildings_1_and_4_props: MarineBuildings1And4Props = {
   buildingInfo: building_info,
+  emergencyGeneratorInformation: emergency_generator_information,
   fpAtsGenLocation: fp_ats_gen_location,
   notes,
 };
