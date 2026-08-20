@@ -27,8 +27,8 @@ function KoernerLibrary({
     <div className="building">
       <Header {...buildingInfo} />
       <Images {...emergencyGeneratorInformation} />
-      <Images {...routeToGenATSAndFP} />
       <Images {...routeToElevators} />
+      <Images {...routeToGenATSAndFP} />
       <Checklist />
       <ATSInspection atsKind="TSBU-600V-250A" />
       <Notes {...notes} />

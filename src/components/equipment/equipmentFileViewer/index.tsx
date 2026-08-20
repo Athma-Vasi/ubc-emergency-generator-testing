@@ -1,11 +1,9 @@
-import { useParams } from "react-router";
-
 type EquipmentFileViewerProps = {
   file: string;
 };
 
 function EquipmentFileViewer({ file }: EquipmentFileViewerProps) {
-  const params = useParams();
+  // const params = useParams();
   return (
     <div className="equipment-file-viewer">
       <object data={file} type="application/pdf" width="100%" height="600px">

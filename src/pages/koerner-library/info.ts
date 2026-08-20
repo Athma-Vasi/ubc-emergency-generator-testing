@@ -12,6 +12,8 @@ import genATSAndFPRoute5 from "./assets/koerner-library-gen-ats-fp-route-5.jpeg"
 import routeToElevators1 from "./assets/koerner-library-route-to-elevators-1.jpeg";
 import routeToElevators2 from "./assets/koerner-library-route-to-elevators-2.jpeg";
 import routeToElevators3 from "./assets/koerner-library-route-to-elevators-3.jpeg";
+import routeToElevators4 from "./assets/koerner-library-route-to-elevators-4.jpeg";
+import routeToElevators5 from "./assets/koerner-library-route-to-elevators-5.jpeg";
 
 const building_info: HeaderProps = {
   accountNumber: 6024,
@@ -35,6 +37,38 @@ const emergency_generator_information: ImagesProps = {
       alt: "Koerner Library Emergency Generator Information Sheet 2",
       caption: "Koerner Library Emergency Generator Information Sheet: page 2",
       src: egiSheet2,
+    },
+  ],
+};
+
+const route_to_elevators: ImagesProps = {
+  description: "Route to Elevators",
+  name: "Route to Elevators",
+  images: [
+    {
+      alt: "Route to Elevators",
+      caption: "Enter this door in the loading bay",
+      src: routeToElevators1,
+    },
+    {
+      alt: "Route to Elevators",
+      caption: "Head inside these doors.",
+      src: routeToElevators2,
+    },
+    {
+      alt: "Route to Elevators",
+      caption: "Head inside these doors.",
+      src: routeToElevators3,
+    },
+    {
+      alt: "Route to Elevators",
+      caption: "Take elevators down to Level 1.",
+      src: routeToElevators4,
+    },
+    {
+      alt: "Route to Elevators",
+      caption: "Make an U-turn and head down this hallway, if taking this elevator.",
+      src: routeToElevators5,
     },
   ],
 };
@@ -71,27 +105,6 @@ const route_to_gen_ats_and_fp: ImagesProps = {
   ],
 };
 
-const route_to_elevators: ImagesProps = {
-  description: "Route to Elevators",
-  name: "Route to Elevators",
-  images: [
-    {
-      alt: "Route to Elevators",
-      caption: "Enter this door in the loading bay",
-      src: routeToElevators1,
-    },
-    {
-      alt: "Route to Elevators",
-      caption: "Head inside these doors.",
-      src: routeToElevators2,
-    },
-    {
-      alt: "Route to Elevators",
-      caption: "Head inside these doors.",
-      src: routeToElevators3,
-    },
-  ],
-};
 const notes: NotesProps = {
   additional: ["Ensure to notify BMS to shutoff AHU-1 prior to starting test."],
 };
