@@ -2,6 +2,8 @@ import type { MarineBuildings5And6Props } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
 import type { NotesProps } from "../../components/notes";
+import egiSheet1 from "./assets/marine-buildings-5and6-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/marine-buildings-5and6-egi-sheet-2.jpeg";
 import fpAtsGenRoute1 from "./assets/marine-buildings-5and6-fp-ats-gen-route-1.jpeg";
 import fpAtsGenRoute2 from "./assets/marine-buildings-5and6-fp-ats-gen-route-2.jpeg";
 import fpAtsGenRoute3 from "./assets/marine-buildings-5and6-fp-ats-gen-route-3.jpeg";
@@ -21,12 +23,30 @@ const building_info: HeaderProps = {
   name: "Marine Buildings 5&6",
 };
 
+const emergency_generator_information: ImagesProps = {
+  description: "Marine Buildings 5&6 Emergency Generator Information",
+  name: "Marine Buildings 5&6 Emergency Generator Information",
+  images: [
+    {
+      alt: "Marine Buildings 5&6 Emergency Generator Information Sheet 1",
+      caption: "Marine Buildings 5&6 Emergency Generator Information Sheet: page 1",
+      src: egiSheet1,
+    },
+    {
+      alt: "Marine Buildings 5&6 Emergency Generator Information Sheet 2",
+      caption: "Marine Buildings 5&6 Emergency Generator Information Sheet: page 2",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const notes: NotesProps = {
   additional: [
     "Must radio elevator tech prior to test start.",
     "Ensure to let monitoring company know to bypass supervisory test and alarm for the duration of all marine buildings test.",
-    "Must grab access card from front desk.",
-    "One generator shared between Marine Buildings 1&4.",
+    "UN numbers for all marine buildings = B1: 5066; B2: 5067; B3: 5075; B4: 5069; B5: 5070; B6: 5071.",
+    "Must grab access card from front desk, which is located in a separate building towards the centre of the complex.",
+    "One generator shared between Marine Buildings 5&6.",
     "There are two ATS', one for each building. Alternate each ATS for short load test.",
     "Once the 2nd ATS is on, double check the generator to ensure normal operation before stopping the short load test.",
   ],
@@ -88,6 +108,7 @@ const fp_ats_gen_route: ImagesProps = {
 
 const marine_buildings_5_and_6_props: MarineBuildings5And6Props = {
   buildingInfo: building_info,
+  emergencyGeneratorInformation: emergency_generator_information,
   fpAtsGenRoute: fp_ats_gen_route,
   notes,
 };

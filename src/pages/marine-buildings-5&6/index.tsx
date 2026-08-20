@@ -7,14 +7,21 @@ import Procedure from "../../components/procedure";
 
 type MarineBuildings5And6Props = {
   buildingInfo: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   fpAtsGenRoute: ImagesProps;
   notes: NotesProps;
 };
 
-function MarineBuildings5And6({ buildingInfo, fpAtsGenRoute, notes }: MarineBuildings5And6Props) {
+function MarineBuildings5And6({
+  buildingInfo,
+  emergencyGeneratorInformation,
+  fpAtsGenRoute,
+  notes,
+}: MarineBuildings5And6Props) {
   return (
     <div className="building">
       <Header {...buildingInfo} />
+      <Images {...emergencyGeneratorInformation} />
       <Images {...fpAtsGenRoute} />
       <Checklist />
       <ATSInspection atsKind="TSC 80" />
