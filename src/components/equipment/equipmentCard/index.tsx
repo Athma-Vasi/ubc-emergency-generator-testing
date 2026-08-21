@@ -10,7 +10,6 @@ function EquipmentCard({
   model,
   pdfUrls,
   tags,
-  title,
 }: EquipmentInfo) {
   const [selectedFile, setSelectedFile] = useState<string | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -27,7 +26,6 @@ function EquipmentCard({
 
   return (
     <div className="equipment-card" id={id}>
-      <h3>{title}</h3>
       <p>
         <strong>Manufacturer:</strong> {manufacturer}
       </p>
@@ -38,16 +36,19 @@ function EquipmentCard({
         <strong>Category:</strong> {category}
       </p>
       <p>{description}</p>
+
       <ul>
-        {pdfUrls.map((url) => (
+        {pdfUrls.map(({ title, url }) => (
           <li key={url}>
             <button type="button" onClick={() => openFile(url)}>
-              {url.split("/").pop()}
+              {title}
             </button>
           </li>
         ))}
       </ul>
+
       <EquipmentFileViewer dialogRef={dialogRef} file={selectedFile} onClose={closeFile} />
+
       <div className="tags">
         {tags.map((tag) => (
           <span key={tag} className="tag">

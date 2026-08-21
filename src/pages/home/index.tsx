@@ -43,7 +43,7 @@ function Home() {
   ];
 
   return (
-    <>
+    <main>
       <section>
         <h1>UBC Emergency Generator Testing</h1>
         <Safety />
@@ -74,7 +74,7 @@ function Home() {
           visit the <Link to="./equipment-library">Equipment Library Page</Link>.
         </p>
       </section>
-    </>
+    </main>
   );
 }
 
