@@ -43,28 +43,38 @@ function Home() {
   ];
 
   return (
-    <section>
-      <h1>UBC Emergency Generator Testing</h1>
-      <Safety />
-      <p>
-        Welcome to the UBC Emergency Generator Testing web application. This application is designed
-        to provide information and resources related to emergency generator testing at UBC
-        Vancouver.
-      </p>
+    <>
+      <section>
+        <h1>UBC Emergency Generator Testing</h1>
+        <Safety />
+        <p>
+          Welcome to the UBC Emergency Generator Testing web application. This application is
+          designed to provide information and resources related to emergency generator testing at
+          UBC Vancouver.
+        </p>
 
-      <p>
-        Please select a building from the list below to access specific information about emergency
-        generator testing procedures, safety guidelines, and other relevant details.
-      </p>
+        <p>
+          Please select a building from the list below to access specific information about
+          emergency generator testing procedures, safety guidelines, and other relevant details.
+        </p>
 
-      <ul>
-        {building_links.map((link, index) => (
-          <li key={`${index}-${link.name}`}>
-            <Link to={link.path}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </section>
+        <ul>
+          {building_links.map((link, index) => (
+            <li key={`${index}-${link.name}`}>
+              <Link to={link.path}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2>Equipment Information</h2>
+        <p>
+          For detailed information about the equipments used in emergency generator testing, please
+          visit the <Link to="./equipment-library">Equipment Library Page</Link>.
+        </p>
+      </section>
+    </>
   );
 }
 

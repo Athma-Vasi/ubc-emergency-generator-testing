@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router";
+import EquipmentLibrary from "./components/equipment/equipmentLibrary";
 import AcadiaParkHighRise from "./pages/acadia-park-high-rise";
 import { acadia_park_high_rise_props } from "./pages/acadia-park-high-rise/info";
 import AllardHall from "./pages/allard-hall";
@@ -168,6 +169,8 @@ function App() {
           path="marine-buildings-5and6"
           element={<MarineBuildings5And6 {...marine_buildings_5_and_6_props} />}
         />
+
+        <Route path="equipment-library" element={<EquipmentLibrary />} />
       </Route>
     </Routes>
   );
