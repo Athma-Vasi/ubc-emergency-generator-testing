@@ -1,15 +1,43 @@
+import { useState } from "react";
 import EquipmentCard from "../equipmentCard";
 import { equipment_infos } from "../info";
 
-// TODO: Conse the other equipment components inside here
-// use state to toggle css hidden/visible of pdfs
-// avoids global state that is required when viewing pdfs in separate page
 function EquipmentLibrary() {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const searchInput = (
+    <input
+      type="text"
+      className="equipment-search-input"
+      placeholder="Search equipment..."
+      value={searchTerm}
+      onChange={(event) => setSearchTerm(event.currentTarget.value)}
+    />
+  );
+
   return (
     <div className="equipment-library">
-      {equipment_infos.map((equipment_info) => (
-        <EquipmentCard key={equipment_info.id} {...equipment_info} />
-      ))}
+      {searchInput}
+
+      {searchTerm.length > 0 ? (
+        <div className="equipment-grid">
+          {equipment_infos
+            .filter((equipment_info) =>
+              equipment_info.tags.some((tag) =>
+                tag.toLowerCase().includes(searchTerm.toLowerCase()),
+              ),
+            )
+            .map((equipment_info) => (
+              <EquipmentCard key={equipment_info.id} {...equipment_info} />
+            ))}
+        </div>
+      ) : (
+        <div className="equipment-grid">
+          {equipment_infos.map((equipment_info) => (
+            <EquipmentCard key={equipment_info.id} {...equipment_info} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
