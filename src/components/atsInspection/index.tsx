@@ -1,3 +1,6 @@
+import EquipmentCard from "../equipment/equipmentCard";
+import { asco_300_equipment_info } from "../equipment/info";
+
 type ATSInspectionProps = {
   atsKind:
     | "ASCO 7000"
@@ -146,6 +149,9 @@ function ATSInspection({ atsKind }: ATSInspectionProps) {
 
   return (
     <section>
+      <h2>{`ATS Information - ${atsKind}`}</h2>
+      <EquipmentCard {...asco_300_equipment_info} />
+
       <h2>{`ATS Inspection - ${atsKind}`}</h2>
 
       <h3>Pre-Test Inspection</h3>

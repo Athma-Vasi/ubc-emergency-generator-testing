@@ -1,6 +1,6 @@
 function Checklist() {
   const pre_and_post_test = {
-    visual_inspection: [
+    generator_visual_inspection: [
       "Check for visible leaks (fuel, oil, coolant, exhaust, etc.).",
       "Inspect belts and hoses for wear or damage.",
       "Check for any loose or missing bolts, nuts, or fasteners.",
@@ -9,7 +9,7 @@ function Checklist() {
       "Inspect the air filter for cleanliness.",
     ],
 
-    fluid_inspection: [
+    generator_fluid_inspection: [
       "Check engine oil level (dipstick) - should be at full mark.",
       "Check coolant level in the radiator and overflow tank - should be at proper level.",
       "Check fuel level - ensure there is enough fuel for operation.",
@@ -17,14 +17,14 @@ function Checklist() {
       "Check for any fluid leaks under the generator.",
     ],
 
-    electrical_inspection: [
+    generator_electrical_inspection: [
       "Check battery voltage and connections - should be clean and tight.",
       "Inspect control panel for any error codes or warning lights.",
       "Check for loose or frayed wiring and ensure all connections are secure.",
       "Ground connections secure and clean.",
     ],
 
-    mechanical_inspection: [
+    generator_mechanical_inspection: [
       "Engine cooling fan and belts are in good condition.",
       "Inspect the generator housing for any damage or wear.",
       "Ensure that all guards and covers are in place and secure.",
