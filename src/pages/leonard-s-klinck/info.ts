@@ -18,6 +18,8 @@ import routeToFPAndGenAndATS6 from "./assets/klinck-route-to-gen-ats-fp-6.jpeg";
 import routeToFPAndGenAndATS7 from "./assets/klinck-route-to-gen-ats-fp-7.jpeg";
 import routeToFPAndGenAndATS8 from "./assets/klinck-route-to-gen-ats-fp-8.jpeg";
 import routeToFPAndGenAndATS9 from "./assets/klinck-route-to-gen-ats-fp-9.jpeg";
+import egiSheet1 from "./assets/leonard-s-klinck-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/leonard-s-klinck-egi-sheet-2.jpeg";
 
 const building_info: HeaderProps = {
   accountNumber: 9999_9999,
@@ -130,11 +132,29 @@ const notes: NotesProps = {
   ],
 };
 
+const emergency_generator_info: ImagesProps = {
+  description: "Emergency Generator Information for Leonard S. Klinck Building.",
+  name: "Emergency Generator",
+  images: [
+    {
+      alt: "Emergency Generator Sheet 1",
+      caption: "First sheet of the emergency generator information.",
+      src: egiSheet1,
+    },
+    {
+      alt: "Emergency Generator Sheet 2",
+      caption: "Second sheet of the emergency generator information.",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const leonard_s_klinck_props: LeonardSKlinckProps = {
-  buildingInfo: building_info,
-  routeToGenATSAndFP: route_to_gen_ats_and_fp,
   ahu1VFDLocation: ahu1_vfd_location,
+  buildingInfo: building_info,
+  emergencyGeneratorInfo: emergency_generator_info,
   notes: notes,
+  routeToGenATSAndFP: route_to_gen_ats_and_fp,
 };
 
 export { leonard_s_klinck_props };

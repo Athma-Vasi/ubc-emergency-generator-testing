@@ -9,16 +9,18 @@ import Notes from "../../components/notes";
 import Procedure from "../../components/procedure";
 
 type LeonardSKlinckProps = {
-  buildingInfo: HeaderProps;
-  routeToGenATSAndFP: ImagesProps;
   ahu1VFDLocation: ImagesProps;
+  buildingInfo: HeaderProps;
+  emergencyGeneratorInformation: ImagesProps;
   notes: NotesProps;
+  routeToGenATSAndFP: ImagesProps;
 };
 
 function LeonardSKlinck({
-  buildingInfo,
-  notes,
   ahu1VFDLocation,
+  buildingInfo,
+  emergencyGeneratorInformation,
+  notes,
   routeToGenATSAndFP,
 }: LeonardSKlinckProps) {
   return (
@@ -26,6 +28,7 @@ function LeonardSKlinck({
       <Header {...buildingInfo} />
       <Images {...routeToGenATSAndFP} />
       <Images {...ahu1VFDLocation} />
+      <Images {...emergencyGeneratorInformation} />
       <Notes {...notes} />
       <Checklist />
       <ATSInspection atsKind="Unknown" />
