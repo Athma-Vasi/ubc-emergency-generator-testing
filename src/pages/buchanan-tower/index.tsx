@@ -7,15 +7,22 @@ import Procedure from "../../components/procedure";
 
 type BuchananTowerProps = {
   buildingInfo: HeaderProps;
+  emergencyGeneratorInfo: ImagesProps;
   routeToGen: ImagesProps;
   notes: NotesProps;
 };
 
-function BuchananTower({ buildingInfo, notes, routeToGen }: BuchananTowerProps) {
+function BuchananTower({
+  buildingInfo,
+  emergencyGeneratorInfo,
+  notes,
+  routeToGen,
+}: BuchananTowerProps) {
   return (
     <div className="building">
       <Header {...buildingInfo} />
       <Images {...routeToGen} />
+      <Images {...emergencyGeneratorInfo} />
       <Notes {...notes} />
       <Checklist />
       <ATSInspection atsKind="ASCO 300" />

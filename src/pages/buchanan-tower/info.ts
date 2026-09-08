@@ -2,6 +2,8 @@ import type { BuchananTowerProps } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
 import type { NotesProps } from "../../components/notes";
+import egiSheet1 from "./assets/buchanan-tower-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/buchanan-tower-egi-sheet-2.jpeg";
 import genRoute1 from "./assets/buchanan-tower-generator-route-1.jpeg";
 import genRoute2 from "./assets/buchanan-tower-generator-route-2.jpeg";
 
@@ -37,8 +39,26 @@ const notes: NotesProps = {
   ],
 };
 
+const emergency_generator_info: ImagesProps = {
+  description: "Emergency Generator located inside the Buchanan Tower building.",
+  name: "Emergency Generator",
+  images: [
+    {
+      alt: "Emergency Generator Sheet 1",
+      caption: "First sheet of the emergency generator information.",
+      src: egiSheet1,
+    },
+    {
+      alt: "Emergency Generator Sheet 2",
+      caption: "Second sheet of the emergency generator information.",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const buchanan_tower_props: BuchananTowerProps = {
   buildingInfo: building_info,
+  emergencyGeneratorInfo: emergency_generator_info,
   routeToGen: route_to_gen,
   notes: notes,
 };
