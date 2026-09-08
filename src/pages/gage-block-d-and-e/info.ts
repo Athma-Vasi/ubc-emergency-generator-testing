@@ -2,6 +2,8 @@ import type { GageBlockDAndEProps } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
 import type { NotesProps } from "../../components/notes";
+import egiSheet1 from "./assets/gage-block-d&e-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/gage-block-d&e-egi-sheet-2.jpeg";
 import genATSAndFPRoute1 from "./assets/gage-block-d-and-e-gen-ats-fp-route-1.jpeg";
 import genATSAndFPRoute2 from "./assets/gage-block-d-and-e-gen-ats-fp-route-2.jpeg";
 
@@ -36,8 +38,26 @@ const notes: NotesProps = {
   additional: ["Key 31R-11 for all doors."],
 };
 
+const emergency_generator_info: ImagesProps = {
+  description: "Emergency Generator located inside the Gage Block D and E building.",
+  name: "Emergency Generator",
+  images: [
+    {
+      alt: "Emergency Generator Sheet 1",
+      caption: "First sheet of the emergency generator information.",
+      src: egiSheet1,
+    },
+    {
+      alt: "Emergency Generator Sheet 2",
+      caption: "Second sheet of the emergency generator information.",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const gage_block_d_and_e_props: GageBlockDAndEProps = {
   buildingInfo: building_info,
+  emergencyGeneratorInfo: emergency_generator_info,
   routeToGenATSAndFP: route_to_gen_ats_and_fp,
   notes: notes,
 };

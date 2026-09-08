@@ -10,15 +10,22 @@ import Procedure from "../../components/procedure";
 
 type GageBlockDAndEProps = {
   buildingInfo: HeaderProps;
+  emergencyGeneratorInfo: ImagesProps;
   routeToGenATSAndFP: ImagesProps;
   notes: NotesProps;
 };
 
-function GageBlockDAndE({ buildingInfo, notes, routeToGenATSAndFP }: GageBlockDAndEProps) {
+function GageBlockDAndE({
+  buildingInfo,
+  emergencyGeneratorInfo,
+  notes,
+  routeToGenATSAndFP,
+}: GageBlockDAndEProps) {
   return (
     <div className="building">
       <Header {...buildingInfo} />
       <Images {...routeToGenATSAndFP} />
+      <Images {...emergencyGeneratorInfo} />
       <Notes {...notes} />
       <Checklist />
       <ATSInspection atsKind="ASCO 300" />
