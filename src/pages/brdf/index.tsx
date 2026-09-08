@@ -6,16 +6,18 @@ import Notes, { type NotesProps } from "../../components/notes";
 import Procedure from "../../components/procedure";
 
 type BRDFProps = {
-  buildingInfo: HeaderProps;
   atsGenRoute: ImagesProps;
+  buildingInfo: HeaderProps;
+  emergencyGeneratorInfo: ImagesProps;
   notes: NotesProps;
 };
 
-function BRDF({ buildingInfo, atsGenRoute, notes }: BRDFProps) {
+function BRDF({ atsGenRoute, buildingInfo, emergencyGeneratorInfo, notes }: BRDFProps) {
   return (
     <div className="building">
       <Header {...buildingInfo} />
       <Images {...atsGenRoute} />
+      <Images {...emergencyGeneratorInfo} />
       <Checklist />
       <ATSInspection atsKind="ASCO 7000" />
       <Notes {...notes} />

@@ -9,6 +9,8 @@ import atsGenRoute4 from "./assets/brdf-ats-gen-route-4.jpeg";
 import atsGenRoute5 from "./assets/brdf-ats-gen-route-5.jpeg";
 import atsGenRoute6 from "./assets/brdf-ats-gen-route-6.jpeg";
 import atsGenRoute7 from "./assets/brdf-ats-gen-route-7.jpeg";
+import egiSheet1 from "./assets/brdf-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/brdf-egi-sheet-2.jpeg";
 
 const building_info: HeaderProps = {
   accountNumber: 9999_9999,
@@ -69,9 +71,28 @@ const notes: NotesProps = {
   ],
 };
 
+const emergency_generator_info: ImagesProps = {
+  description:
+    "Emergency Generator located inside the Bioenergy Research and Demonstration Facility (BRDF) building.",
+  name: "Emergency Generator",
+  images: [
+    {
+      alt: "Emergency Generator Sheet 1",
+      caption: "First sheet of the emergency generator information.",
+      src: egiSheet1,
+    },
+    {
+      alt: "Emergency Generator Sheet 2",
+      caption: "Second sheet of the emergency generator information.",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const brdf_props: BRDFProps = {
-  buildingInfo: building_info,
   atsGenRoute: ats_gen_route,
+  buildingInfo: building_info,
+  emergencyGeneratorInfo: emergency_generator_info,
   notes,
 };
 
