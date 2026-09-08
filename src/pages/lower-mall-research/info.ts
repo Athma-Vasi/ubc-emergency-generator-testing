@@ -1,6 +1,8 @@
 import type { LowerMallResearchProps } from ".";
 import type { HeaderProps } from "../../components/header";
 import type { ImagesProps } from "../../components/images";
+import egiSheet1 from "./assets/lower-mall-research-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/lower-mall-research-egi-sheet-2.jpeg";
 import fpAtsGenRoute1 from "./assets/lower-mall-research-gen-ats-fp-route-1.jpeg";
 import fpAtsGenRoute10 from "./assets/lower-mall-research-gen-ats-fp-route-10.jpeg";
 import fpAtsGenRoute11 from "./assets/lower-mall-research-gen-ats-fp-route-11.jpeg";
@@ -100,8 +102,27 @@ const fp_ats_gen_route: ImagesProps = {
   ],
 };
 
+const emergency_generator_info: ImagesProps = {
+  description:
+    "Here is the route to reach the Emergency Generator located inside the Lower Mall Research Building.",
+  name: "Route to Emergency Generator",
+  images: [
+    {
+      alt: "Emergency Generator Route 1",
+      caption: "Head inside main building entrance.",
+      src: egiSheet1,
+    },
+    {
+      alt: "Emergency Generator Route 2",
+      caption: "Take a left in the lobby.",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const lower_mall_research_props: LowerMallResearchProps = {
   buildingInfo: building_info,
+  emergencyGeneratorInfo: emergency_generator_info,
   fpAtsGenRoute: fp_ats_gen_route,
 };
 
