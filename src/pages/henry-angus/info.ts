@@ -6,6 +6,8 @@ import atsAndFPLocation1 from "./assets/henry-angus-ats-fp-location-1.jpeg";
 import atsAndFPLocation2 from "./assets/henry-angus-ats-fp-location-2.jpeg";
 import atsAndFPLocation3 from "./assets/henry-angus-ats-fp-location-3.jpeg";
 import atsAndFPLocation4 from "./assets/henry-angus-ats-fp-location-4.jpeg";
+import egiSheet1 from "./assets/henry-angus-egi-sheet-1.jpeg";
+import egiSheet2 from "./assets/henry-angus-egi-sheet-2.jpeg";
 import genLocation1 from "./assets/henry-angus-generator-location-1.jpeg";
 
 const building_info: HeaderProps = {
@@ -67,10 +69,28 @@ const notes: NotesProps = {
   ],
 };
 
+const emergency_generator_info: ImagesProps = {
+  description: "Emergency Generator located outside the Henry Angus building.",
+  name: "Emergency Generator",
+  images: [
+    {
+      alt: "Emergency Generator Sheet 1",
+      caption: "First sheet of the emergency generator information.",
+      src: egiSheet1,
+    },
+    {
+      alt: "Emergency Generator Sheet 2",
+      caption: "Second sheet of the emergency generator information.",
+      src: egiSheet2,
+    },
+  ],
+};
+
 const henry_angus_props: HenryAngusProps = {
-  buildingInfo: building_info,
-  generatorLocation: generator_location,
   atsAndFPLocation: ats_and_fp_location,
+  buildingInfo: building_info,
+  emergencyGeneratorInfo: emergency_generator_info,
+  generatorLocation: generator_location,
   notes: notes,
 };
 

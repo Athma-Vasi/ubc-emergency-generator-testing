@@ -9,18 +9,26 @@ import Notes from "../../components/notes";
 import Procedure from "../../components/procedure";
 
 type HenryAngusProps = {
-  buildingInfo: HeaderProps;
-  generatorLocation: ImagesProps;
   atsAndFPLocation: ImagesProps;
+  buildingInfo: HeaderProps;
+  emergencyGeneratorInfo: ImagesProps;
+  generatorLocation: ImagesProps;
   notes: NotesProps;
 };
 
-function HenryAngus({ atsAndFPLocation, buildingInfo, generatorLocation, notes }: HenryAngusProps) {
+function HenryAngus({
+  atsAndFPLocation,
+  buildingInfo,
+  emergencyGeneratorInfo,
+  generatorLocation,
+  notes,
+}: HenryAngusProps) {
   return (
     <div className="building">
       <Header {...buildingInfo} />
       <Images {...generatorLocation} />
       <Images {...atsAndFPLocation} />
+      <Images {...emergencyGeneratorInfo} />
       <Checklist />
       <ATSInspection atsKind="Eaton ATC-300" />
       <Notes {...notes} />
