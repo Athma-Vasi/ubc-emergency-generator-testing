@@ -152,7 +152,7 @@ const emergency_generator_info: ImagesProps = {
 const leonard_s_klinck_props: LeonardSKlinckProps = {
   ahu1VFDLocation: ahu1_vfd_location,
   buildingInfo: building_info,
-  emergencyGeneratorInfo: emergency_generator_info,
+  emergencyGeneratorInformation: emergency_generator_info,
   notes: notes,
   routeToGenATSAndFP: route_to_gen_ats_and_fp,
 };
