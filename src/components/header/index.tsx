@@ -36,7 +36,8 @@ type BuildingName =
   | "Bioenergy Research and Demonstration Facility (BRDF)"
   | "Marine Buildings 1&4"
   | "Marine Buildings 5&6"
-  | "Douglas Kenny Building";
+  | "Douglas Kenny Building"
+  | "Neville Scarfe Building";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
