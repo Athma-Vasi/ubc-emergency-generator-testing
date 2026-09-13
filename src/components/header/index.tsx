@@ -37,7 +37,8 @@ type BuildingName =
   | "Marine Buildings 1&4"
   | "Marine Buildings 5&6"
   | "Douglas Kenny Building"
-  | "Neville Scarfe Building";
+  | "Neville Scarfe Building"
+  | "Earth Sciences Building";
 
 type LocationName = "UBC Vancouver" | "UBC Okanagan";
 
