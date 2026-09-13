@@ -41,6 +41,7 @@ function Home() {
     { name: "Marine Buildings 1&4", path: "./marine-buildings-1and4" },
     { name: "Marine Buildings 5&6", path: "./marine-buildings-5and6" },
     { name: "Earth Sciences Building", path: "./earth-sciences-building" },
+    { name: "CIRS", path: "./cirs" },
   ];
 
   return (

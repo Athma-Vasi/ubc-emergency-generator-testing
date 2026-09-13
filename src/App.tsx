@@ -26,6 +26,8 @@ import ChanCentre from "./pages/chan-centre";
 import { chan_centre_props } from "./pages/chan-centre/info";
 import ChemicalPhysics from "./pages/chemical-physics";
 import { chemical_physics_props } from "./pages/chemical-physics/info";
+import CIRS from "./pages/cirs";
+import { cirs_props } from "./pages/cirs/info";
 import EarthSciencesBuilding from "./pages/earth-sciences-building";
 import { earth_sciences_building_props } from "./pages/earth-sciences-building/info";
 import FairviewCrescent from "./pages/fairview-crescent";
@@ -175,6 +177,7 @@ function App() {
           path="earth-sciences-building"
           element={<EarthSciencesBuilding {...earth_sciences_building_props} />}
         />
+        <Route path="cirs" element={<CIRS {...cirs_props} />} />
 
         <Route path="equipment-library" element={<EquipmentLibrary />} />
       </Route>
